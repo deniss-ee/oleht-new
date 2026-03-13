@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Õhtuleht — Brand Manual</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/brand-assets.css">
+  <link rel="stylesheet" href="css/editorial.css">
+  <link rel="stylesheet" href="css/live-monetization.css">
+  <link rel="stylesheet" href="css/personalization.css">
+</head>
+<body>
+<div class="layout" id="layout">
+
+  <!-- ═══════════════ TOP BAR ═══════════════ -->
+  <header class="topbar">
+    <div class="topbar-logo">Õhtuleht<span>.</span></div>
+    <div class="topbar-label">Brand Manual</div>
+    <span class="topbar-version">v2.0 · 2026</span>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <!-- ═══════════════ SIDEBAR ═══════════════ -->
+  <nav class="sidebar" id="sidebar">
+    <div class="nav-section-label">Getting Started</div>
+    <a href="#overview" class="nav-link active"><span class="nav-icon">◈</span> Overview</a>
+
+    <div class="nav-section-label">Brand Assets</div>
+    <a href="#logos" class="nav-link"><span class="nav-icon">◉</span> Logos</a>
+    <a href="#logo-variants" class="nav-sub">↳ Logo Variants</a>
+    <a href="#logo-clearspace" class="nav-sub">↳ Clear Space</a>
+    <a href="#logo-usage" class="nav-sub">↳ Dos &amp; Don'ts</a>
+
+    <a href="#colors" class="nav-link"><span class="nav-icon">◑</span> Color Palette</a>
+    <a href="#colors-primary" class="nav-sub">↳ Primary (Red)</a>
+    <a href="#colors-neutral" class="nav-sub">↳ Neutral (Gray)</a>
+    <a href="#colors-secondary" class="nav-sub">↳ Secondary (Yellow)</a>
+    <a href="#colors-pluss" class="nav-sub">↳ Pluss (Gold)</a>
+    <a href="#colors-papery" class="nav-sub">↳ Papery (Cream)</a>
+    <a href="#colors-category" class="nav-sub">↳ Category &amp; Accent</a>
+
+    <a href="#typography" class="nav-link"><span class="nav-icon">◇</span> Typography</a>
+    <a href="#type-families" class="nav-sub">↳ Font Families</a>
+    <a href="#type-hierarchy" class="nav-sub">↳ Type Hierarchy</a>
+
+    <div class="nav-section-label">System</div>
+    <a href="#spacing" class="nav-link"><span class="nav-icon">▦</span> Layout &amp; Spacing</a>
+    <a href="#ui-elements" class="nav-link"><span class="nav-icon">▣</span> UI Elements</a>
+    <a href="#global-nav" class="nav-link"><span class="nav-icon">☰</span> Global Navigation</a>
+    <a href="#gn-primary-bar" class="nav-sub">↳ Primary Bar</a>
+    <a href="#gn-secondary-bar" class="nav-sub">↳ Secondary Bar</a>
+    <a href="#gn-mobile" class="nav-sub">↳ Mobile Collapse</a>
+    <a href="#tokens" class="nav-link"><span class="nav-icon">◻</span> Design Tokens</a>
+
+    <div class="nav-section-label">Editorial Guidelines</div>
+    <a href="#editorial-typography" class="nav-link"><span class="nav-icon">✦</span> Editorial Typography</a>
+    <a href="#edit-rich-text" class="nav-sub">↳ Rich Text Elements</a>
+    <a href="#edit-accessibility" class="nav-sub">↳ Accessibility</a>
+
+    <a href="#news-components" class="nav-link"><span class="nav-icon">⊞</span> News Cards</a>
+    <a href="#nc-hero" class="nav-sub">↳ Hero / Featured</a>
+    <a href="#nc-standard" class="nav-sub">↳ Standard Feed</a>
+    <a href="#nc-compact" class="nav-sub">↳ Compact List</a>
+
+    <a href="#section-headers" class="nav-link"><span class="nav-icon">▬</span> Section Headers</a>
+    <a href="#sh-block-headers" class="nav-sub">↳ Block Headers</a>
+    <a href="#sh-thematic" class="nav-sub">↳ Thematic Banners</a>
+
+    <a href="#alerts-breaking" class="nav-link"><span class="nav-icon">◆</span> Alerts &amp; Breaking</a>
+    <a href="#ab-ticker" class="nav-sub">↳ Ticker Bar</a>
+
+    <a href="#monetization" class="nav-link"><span class="nav-icon">◐</span> Premium &amp; Ads</a>
+    <a href="#mon-pluss" class="nav-sub">↳ Pluss Badges</a>
+    <a href="#mon-paywall" class="nav-sub">↳ Paywall Gate</a>
+    <a href="#mon-ads" class="nav-sub">↳ Ad Slots</a>
+
+    <a href="#media-embeds" class="nav-link"><span class="nav-icon">▷</span> Media &amp; Embeds</a>
+    <a href="#thumb-badges" class="nav-link"><span class="nav-icon">▶</span> Thumbnail Overlays</a>
+    <a href="#tb-video" class="nav-sub">↳ Video &amp; Gallery</a>
+    <a href="#tb-comments" class="nav-sub">↳ Comment Counts</a>
+
+    <div class="nav-section-label">Live &amp; Personalisation</div>
+    <a href="#live-coverage" class="nav-link"><span class="nav-icon">●</span> Live Coverage</a>
+    <a href="#lc-blog" class="nav-sub">↳ Live Blog</a>
+    <a href="#lc-widget" class="nav-sub">↳ Live Widget</a>
+    <a href="#lc-timeline" class="nav-sub">↳ Timeline</a>
+    <a href="#lc-keyevents" class="nav-sub">↳ Key Events</a>
+
+    <a href="#utilities-engagement" class="nav-link"><span class="nav-icon">⊞</span> Utilities</a>
+    <a href="#ue-bylines" class="nav-sub">↳ Author Bylines</a>
+    <a href="#ue-widgets" class="nav-sub">↳ Weather &amp; Markets</a>
+    <a href="#ue-engagement" class="nav-sub">↳ Comments</a>
+
+    <a href="#sidebar-widgets" class="nav-link"><span class="nav-icon">☷</span> Sidebar Widgets</a>
+    <a href="#sw-tabbed" class="nav-sub">↳ Tabbed Lists</a>
+    <a href="#sw-sisuturundus" class="nav-sub">↳ SISUTURUNDUS</a>
+
+    <a href="#user-nav" class="nav-link"><span class="nav-icon">○</span> Navigation States</a>
+    <a href="#personalisation" class="nav-link"><span class="nav-icon">◆</span> Personalisation</a>
+    <a href="#pers-bookmark" class="nav-sub">↳ Bookmarks</a>
+    <a href="#pers-topics" class="nav-sub">↳ Topics</a>
+
+    <a href="#reading-prefs" class="nav-link"><span class="nav-icon">◐</span> Reading Prefs</a>
+    <a href="#rp-darkmode" class="nav-sub">↳ Dark Mode</a>
+  </nav>
+
+  <!-- Mobile sidebar backdrop -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <main class="main" id="main">
+
+    <!-- ═══════════ OVERVIEW ═══════════ -->
+    <section class="section" id="overview" style="background:var(--color-black);color:var(--color-surface-white);padding:var(--space-4xl);max-width:none;border-bottom:none;position:relative;overflow:hidden;">
+      <div style="content:'Õ';position:absolute;right:-40px;top:-60px;font-family:var(--font-serif);font-size:400px;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;pointer-events:none;user-select:none;">Õ</div>
+      <div style="width:64px;height:4px;background:var(--color-brand-red);margin-bottom:var(--space-xl);"></div>
+      <div style="font-family:var(--font-serif);font-size:clamp(48px,8vw,96px);font-weight:var(--weight-black);letter-spacing:-0.03em;line-height:1;margin-bottom:var(--space-xl);">Õhtuleht<span style="color:var(--color-brand-red);">.</span></div>
+      <p style="font-size:var(--text-md);color:#888;max-width:560px;line-height:var(--leading-loose);margin-bottom:var(--space-2xl);">
+        Single source of truth for all brand assets, design tokens, and visual guidelines for Õhtuleht — Estonia's most-read evening publication.
+      </p>
+      <div style="display:flex;gap:var(--space-2xl);flex-wrap:wrap;">
+        <div style="border-left:2px solid var(--color-brand-red);padding-left:var(--space-md);"><div style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:4px;">Publication</div><div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);color:#ddd;">Õhtuleht</div></div>
+        <div style="border-left:2px solid var(--color-brand-red);padding-left:var(--space-md);"><div style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:4px;">Publisher</div><div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);color:#ddd;">Õhtuleht Kirjastus AS</div></div>
+        <div style="border-left:2px solid var(--color-brand-red);padding-left:var(--space-md);"><div style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:4px;">Version</div><div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);color:#ddd;">2.0</div></div>
+        <div style="border-left:2px solid var(--color-brand-red);padding-left:var(--space-md);"><div style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:4px;">Updated</div><div style="font-size:var(--text-sm);font-weight:var(--weight-semibold);color:#ddd;">March 2026</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ LOGOS ═══════════ -->
+    <section class="section" id="logos">
+      <div class="section-eyebrow">Brand Identity</div>
+      <h2 class="section-title">Logo &amp; Mark</h2>
+      <p class="section-desc">The Õhtuleht logo is the primary expression of our brand. These guidelines ensure it is used consistently across all media.</p>
+
+      <div class="callout"><strong>Asset paths:</strong> All SVG and PNG files should reside at <code>/public/assets/logos/</code>. Update download links once the asset library is confirmed.</div>
+
+      <h3 class="subsection-title" id="logo-variants">Logo Variants</h3>
+      <div class="logo-grid">
+        <div class="logo-card"><div class="logo-card-preview white"><div class="logo-wordmark size-lg on-white">Õhtu<span class="accent">leht</span></div></div><div class="logo-card-info"><div class="logo-card-name">Primary — Light Background</div><div class="logo-card-desc">Default brand expression on white/light backgrounds.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>PNG</a></div></div></div>
+
+        <div class="logo-card"><div class="logo-card-preview dark"><div class="logo-wordmark size-lg on-dark">Õhtu<span class="accent">leht</span></div></div><div class="logo-card-info"><div class="logo-card-name">Primary — Dark Background</div><div class="logo-card-desc">For dark or black backgrounds and photography overlays.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>PNG</a></div></div></div>
+
+        <div class="logo-card"><div class="logo-card-preview red"><div class="logo-wordmark size-lg on-red">Õhtu<span class="accent">leht</span></div></div><div class="logo-card-info"><div class="logo-card-name">Reversed — Brand Red</div><div class="logo-card-desc">Use on brand red backgrounds only.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a></div></div></div>
+
+        <div class="logo-card"><div class="logo-card-preview paper"><div class="logo-wordmark size-lg mono">Õhtu<span class="accent">leht</span></div></div><div class="logo-card-info"><div class="logo-card-name">Monochrome — Black</div><div class="logo-card-desc">Single-colour for print, embossing, or single-ink.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a></div></div></div>
+
+        <div class="logo-card"><div class="logo-card-preview white"><div class="logo-mark" style="background:var(--color-brand-red);"><div class="logo-mark-inner" style="color:white;">Õ</div></div></div><div class="logo-card-info"><div class="logo-card-name">Logomark — Icon</div><div class="logo-card-desc">Favicon, app icon, social media avatar. Min 32×32px.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a></div></div></div>
+
+        <div class="logo-card"><div class="logo-card-preview dark"><div class="logo-wordmark size-lg mono-white">Õhtu<span class="accent">leht</span></div></div><div class="logo-card-info"><div class="logo-card-name">Monochrome — White</div><div class="logo-card-desc">Reverse single-colour for dark print.</div><div class="logo-card-actions"><a class="btn-download" href="#" download><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 1v7M3 6l3 3 3-3M1 10h10"/></svg>SVG</a></div></div></div>
+      </div>
+
+      <!-- Minimum Size -->
+      <h3 class="subsection-title">Minimum Size</h3>
+      <div style="display:flex;gap:var(--space-xl);flex-wrap:wrap;margin-bottom:var(--space-2xl);">
+        <div style="text-align:center;"><div style="border:1px dashed var(--color-rule);padding:12px 16px;background:white;border-radius:var(--radius-md);margin-bottom:8px;display:inline-block;"><div class="logo-wordmark on-white" style="font-size:20px;">Õhtu<span class="accent">leht</span></div></div><div style="font-size:var(--text-xs);color:var(--color-ink-60);">Digital min<br><strong>120px wide</strong></div></div>
+        <div style="text-align:center;"><div style="border:1px dashed var(--color-rule);padding:8px 12px;background:white;border-radius:var(--radius-md);margin-bottom:8px;display:inline-block;"><div class="logo-wordmark on-white" style="font-size:14px;">Õhtu<span class="accent">leht</span></div></div><div style="font-size:var(--text-xs);color:var(--color-ink-60);">Print min<br><strong>25mm wide</strong></div></div>
+        <div style="text-align:center;"><div style="border:1px dashed var(--color-rule);padding:8px;background:white;border-radius:var(--radius-md);margin-bottom:8px;display:inline-block;"><div class="logo-mark" style="background:var(--color-brand-red);width:32px;height:32px;"><div class="logo-mark-inner" style="font-size:22px;color:white;">Õ</div></div></div><div style="font-size:var(--text-xs);color:var(--color-ink-60);">Logomark min<br><strong>32×32px</strong></div></div>
+      </div>
+
+      <!-- Clear Space -->
+      <h3 class="subsection-title" id="logo-clearspace">Clear Space</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Maintain clear space equal to the cap-height of "Õ" on all sides.</p>
+      <div class="clearspace-demo">
+        <div class="clearspace-box">
+          <span class="clearspace-label cs-top">1× cap-height</span>
+          <span class="clearspace-label cs-bottom">1× cap-height</span>
+          <span class="clearspace-label cs-left">1×</span>
+          <span class="clearspace-label cs-right">1×</span>
+          <div class="logo-wordmark size-md on-white">Õhtu<span class="accent">leht</span></div>
+        </div>
+        <p class="clearspace-note">Clear space ≈ 8px on a 32px logo.</p>
+      </div>
+
+      <!-- Dos & Don'ts -->
+      <h3 class="subsection-title" id="logo-usage">Dos &amp; Don'ts</h3>
+      <div class="dos-donts">
+        <div>
+          <div class="dos-donts-header do">✓ Do</div>
+          <div class="dos-donts-item do-item"><span class="item-icon">✓</span> Use approved logo files without modification.</div>
+          <div class="dos-donts-item do-item"><span class="item-icon">✓</span> Use on backgrounds with sufficient contrast.</div>
+          <div class="dos-donts-item do-item"><span class="item-icon">✓</span> Maintain minimum clear space zone.</div>
+          <div class="dos-donts-item do-item"><span class="item-icon">✓</span> Scale proportionally only.</div>
+        </div>
+        <div>
+          <div class="dos-donts-header dont">✗ Don't</div>
+          <div class="dos-donts-item dont-item"><span class="item-icon">✗</span> Do not stretch, skew, or distort.</div>
+          <div class="dos-donts-item dont-item"><span class="item-icon">✗</span> Do not recolour outside approved variants.</div>
+          <div class="dos-donts-item dont-item"><span class="item-icon">✗</span> Do not place on busy, low-contrast backgrounds.</div>
+          <div class="dos-donts-item dont-item"><span class="item-icon">✗</span> Do not add drop shadows, gradients, or effects.</div>
+          <div class="dos-donts-item dont-item"><span class="item-icon">✗</span> Do not alter spacing or typeface of the wordmark.</div>
+        </div>
+      </div>
+
+      <p style="font-size:var(--text-sm);font-weight:600;margin-bottom:var(--space-md);">Examples of Incorrect Usage</p>
+      <div class="misuse-grid">
+        <div class="misuse-example"><div class="misuse-preview"><div class="logo-wordmark on-white" style="font-size:28px;transform:scaleX(1.4);">Õhtu<span class="accent">leht</span></div></div><div class="misuse-label">✗ Stretched</div></div>
+        <div class="misuse-example"><div class="misuse-preview" style="background:repeating-linear-gradient(45deg,#aaa 0,#aaa 4px,#ccc 4px,#ccc 8px);"><div class="logo-wordmark on-white" style="font-size:28px;">Õhtu<span class="accent">leht</span></div></div><div class="misuse-label">✗ Low Contrast</div></div>
+        <div class="misuse-example"><div class="misuse-preview"><div class="logo-wordmark on-white" style="font-size:28px;color:#888;"><span style="color:#888;">Õhtu</span><span style="color:#aaa;">leht</span></div></div><div class="misuse-label">✗ Wrong Colour</div></div>
+        <div class="misuse-example"><div class="misuse-preview"><div class="logo-wordmark on-white" style="font-size:28px;transform:rotate(-15deg);">Õhtu<span class="accent">leht</span></div></div><div class="misuse-label">✗ Rotated</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ COLORS ═══════════ -->
+    <section class="section" id="colors">
+      <div class="section-eyebrow">Visual Identity</div>
+      <h2 class="section-title">Color Palette</h2>
+      <p class="section-desc">Strict 10-step scales (50–900) for all core brand colors. Each scale has a designated base step (★) that matches the production value. Click any swatch to copy its HEX. Legacy tokens are aliased to the new scale automatically.</p>
+
+      <!-- ─── PRIMARY (RED) ─────────────────────────── -->
+      <h3 class="subsection-title" id="colors-primary">Primary (Red)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">The core brand red. Base production value <code>#D0021B</code> maps to step <strong>600</strong>. Used for logos, CTAs, links, breaking indicators, and active states.</p>
+      <div class="cs-family">
+        <div class="cs-family-header"><span class="cs-family-name">primary</span><span class="cs-family-base">--color-primary-{step}</span></div>
+        <div class="cs-strip">
+          <div class="cs-step" onclick="copyColor('#FEF2F2',this)"><div class="cs-step-color" style="background:#FEF2F2;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">50</div><div class="cs-step-hex">#FEF2F2</div><div class="cs-step-var">--primary-50</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FDE3E5',this)"><div class="cs-step-color" style="background:#FDE3E5;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">100</div><div class="cs-step-hex">#FDE3E5</div><div class="cs-step-var">--primary-100</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FACCD0',this)"><div class="cs-step-color" style="background:#FACCD0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">200</div><div class="cs-step-hex">#FACCD0</div><div class="cs-step-var">--primary-200</div></div></div>
+          <div class="cs-step" onclick="copyColor('#F5969E',this)"><div class="cs-step-color" style="background:#F5969E;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">300</div><div class="cs-step-hex">#F5969E</div><div class="cs-step-var">--primary-300</div></div></div>
+          <div class="cs-step" onclick="copyColor('#EE5462',this)"><div class="cs-step-color" style="background:#EE5462;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">400</div><div class="cs-step-hex">#EE5462</div><div class="cs-step-var">--primary-400</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E3162D',this)"><div class="cs-step-color" style="background:#E3162D;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">500</div><div class="cs-step-hex">#E3162D</div><div class="cs-step-var">--primary-500</div></div></div>
+          <div class="cs-step is-base" onclick="copyColor('#D0021B',this)"><div class="cs-step-color" style="background:#D0021B;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">600</div><div class="cs-step-hex">#D0021B</div><div class="cs-step-var">--primary-600</div></div></div>
+          <div class="cs-step" onclick="copyColor('#A50015',this)"><div class="cs-step-color" style="background:#A50015;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">700</div><div class="cs-step-hex">#A50015</div><div class="cs-step-var">--primary-700</div></div></div>
+          <div class="cs-step" onclick="copyColor('#8B0316',this)"><div class="cs-step-color" style="background:#8B0316;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">800</div><div class="cs-step-hex">#8B0316</div><div class="cs-step-var">--primary-800</div></div></div>
+          <div class="cs-step" onclick="copyColor('#760618',this)"><div class="cs-step-color" style="background:#760618;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">900</div><div class="cs-step-hex">#760618</div><div class="cs-step-var">--primary-900</div></div></div>
+        </div>
+      </div>
+
+      <!-- ─── NEUTRAL (GRAY) ────────────────────────── -->
+      <h3 class="subsection-title" id="colors-neutral">Neutral (Gray)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">The warm gray scale for text, borders, surfaces, and backgrounds. Production black <code>#0D0D0D</code> maps to step <strong>900</strong>. Paper/surface backgrounds sit at 50–100.</p>
+      <div class="cs-family">
+        <div class="cs-family-header"><span class="cs-family-name">neutral</span><span class="cs-family-base">--color-neutral-{step}</span></div>
+        <div class="cs-strip">
+          <div class="cs-step" onclick="copyColor('#FAFAF8',this)"><div class="cs-step-color" style="background:#FAFAF8;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">50</div><div class="cs-step-hex">#FAFAF8</div><div class="cs-step-var">--neutral-50</div></div></div>
+          <div class="cs-step" onclick="copyColor('#F7F4F0',this)"><div class="cs-step-color" style="background:#F7F4F0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">100</div><div class="cs-step-hex">#F7F4F0</div><div class="cs-step-var">--neutral-100</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E8E8E4',this)"><div class="cs-step-color" style="background:#E8E8E4;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">200</div><div class="cs-step-hex">#E8E8E4</div><div class="cs-step-var">--neutral-200</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E0E0E0',this)"><div class="cs-step-color" style="background:#E0E0E0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">300</div><div class="cs-step-hex">#E0E0E0</div><div class="cs-step-var">--neutral-300</div></div></div>
+          <div class="cs-step" onclick="copyColor('#CCCCCC',this)"><div class="cs-step-color" style="background:#CCCCCC;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">400</div><div class="cs-step-hex">#CCCCCC</div><div class="cs-step-var">--neutral-400</div></div></div>
+          <div class="cs-step" onclick="copyColor('#999999',this)"><div class="cs-step-color" style="background:#999999;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">500</div><div class="cs-step-hex">#999999</div><div class="cs-step-var">--neutral-500</div></div></div>
+          <div class="cs-step" onclick="copyColor('#666666',this)"><div class="cs-step-color" style="background:#666666;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">600</div><div class="cs-step-hex">#666666</div><div class="cs-step-var">--neutral-600</div></div></div>
+          <div class="cs-step" onclick="copyColor('#333333',this)"><div class="cs-step-color" style="background:#333333;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">700</div><div class="cs-step-hex">#333333</div><div class="cs-step-var">--neutral-700</div></div></div>
+          <div class="cs-step" onclick="copyColor('#1A1A1A',this)"><div class="cs-step-color" style="background:#1A1A1A;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">800</div><div class="cs-step-hex">#1A1A1A</div><div class="cs-step-var">--neutral-800</div></div></div>
+          <div class="cs-step is-base" onclick="copyColor('#0D0D0D',this)"><div class="cs-step-color" style="background:#0D0D0D;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">900</div><div class="cs-step-hex">#0D0D0D</div><div class="cs-step-var">--neutral-900</div></div></div>
+        </div>
+      </div>
+
+      <!-- ─── SECONDARY (YELLOW) ────────────────────── -->
+      <h3 class="subsection-title" id="colors-secondary">Secondary (Yellow)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">The highlight yellow used for subscription promos, feature accents, and highlights. Production value <code>#F6C90E</code> maps to step <strong>400</strong>.</p>
+      <div class="cs-family">
+        <div class="cs-family-header"><span class="cs-family-name">secondary</span><span class="cs-family-base">--color-secondary-{step}</span></div>
+        <div class="cs-strip">
+          <div class="cs-step" onclick="copyColor('#FFFEF0',this)"><div class="cs-step-color" style="background:#FFFEF0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">50</div><div class="cs-step-hex">#FFFEF0</div><div class="cs-step-var">--secondary-50</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FFFBD1',this)"><div class="cs-step-color" style="background:#FFFBD1;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">100</div><div class="cs-step-hex">#FFFBD1</div><div class="cs-step-var">--secondary-100</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FFF5A3',this)"><div class="cs-step-color" style="background:#FFF5A3;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">200</div><div class="cs-step-hex">#FFF5A3</div><div class="cs-step-var">--secondary-200</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FCEB6B',this)"><div class="cs-step-color" style="background:#FCEB6B;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">300</div><div class="cs-step-hex">#FCEB6B</div><div class="cs-step-var">--secondary-300</div></div></div>
+          <div class="cs-step is-base" onclick="copyColor('#F6C90E',this)"><div class="cs-step-color" style="background:#F6C90E;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">400</div><div class="cs-step-hex">#F6C90E</div><div class="cs-step-var">--secondary-400</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E6B308',this)"><div class="cs-step-color" style="background:#E6B308;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">500</div><div class="cs-step-hex">#E6B308</div><div class="cs-step-var">--secondary-500</div></div></div>
+          <div class="cs-step" onclick="copyColor('#C68D04',this)"><div class="cs-step-color" style="background:#C68D04;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">600</div><div class="cs-step-hex">#C68D04</div><div class="cs-step-var">--secondary-600</div></div></div>
+          <div class="cs-step" onclick="copyColor('#9E6807',this)"><div class="cs-step-color" style="background:#9E6807;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">700</div><div class="cs-step-hex">#9E6807</div><div class="cs-step-var">--secondary-700</div></div></div>
+          <div class="cs-step" onclick="copyColor('#82520E',this)"><div class="cs-step-color" style="background:#82520E;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">800</div><div class="cs-step-hex">#82520E</div><div class="cs-step-var">--secondary-800</div></div></div>
+          <div class="cs-step" onclick="copyColor('#6F4312',this)"><div class="cs-step-color" style="background:#6F4312;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">900</div><div class="cs-step-hex">#6F4312</div><div class="cs-step-var">--secondary-900</div></div></div>
+        </div>
+      </div>
+
+      <!-- ─── PLUSS (GOLD) ──────────────────────────── -->
+      <h3 class="subsection-title" id="colors-pluss">Pluss (Gold)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">The premium gold scale for Pluss badges, paywall gates, subscription UI, and premium content indicators. Production value <code>#C9910A</code> maps to step <strong>500</strong>.</p>
+      <div class="cs-family">
+        <div class="cs-family-header"><span class="cs-family-name">pluss</span><span class="cs-family-base">--color-pluss-{step}</span></div>
+        <div class="cs-strip">
+          <div class="cs-step" onclick="copyColor('#FDF8EC',this)"><div class="cs-step-color" style="background:#FDF8EC;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">50</div><div class="cs-step-hex">#FDF8EC</div><div class="cs-step-var">--pluss-50</div></div></div>
+          <div class="cs-step" onclick="copyColor('#FAEECC',this)"><div class="cs-step-color" style="background:#FAEECC;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">100</div><div class="cs-step-hex">#FAEECC</div><div class="cs-step-var">--pluss-100</div></div></div>
+          <div class="cs-step" onclick="copyColor('#F4DC96',this)"><div class="cs-step-color" style="background:#F4DC96;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">200</div><div class="cs-step-hex">#F4DC96</div><div class="cs-step-var">--pluss-200</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E8C96A',this)"><div class="cs-step-color" style="background:#E8C96A;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">300</div><div class="cs-step-hex">#E8C96A</div><div class="cs-step-var">--pluss-300</div></div></div>
+          <div class="cs-step" onclick="copyColor('#DAAF2D',this)"><div class="cs-step-color" style="background:#DAAF2D;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">400</div><div class="cs-step-hex">#DAAF2D</div><div class="cs-step-var">--pluss-400</div></div></div>
+          <div class="cs-step is-base" onclick="copyColor('#C9910A',this)"><div class="cs-step-color" style="background:#C9910A;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">500</div><div class="cs-step-hex">#C9910A</div><div class="cs-step-var">--pluss-500</div></div></div>
+          <div class="cs-step" onclick="copyColor('#B8860B',this)"><div class="cs-step-color" style="background:#B8860B;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">600</div><div class="cs-step-hex">#B8860B</div><div class="cs-step-var">--pluss-600</div></div></div>
+          <div class="cs-step" onclick="copyColor('#946406',this)"><div class="cs-step-color" style="background:#946406;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">700</div><div class="cs-step-hex">#946406</div><div class="cs-step-var">--pluss-700</div></div></div>
+          <div class="cs-step" onclick="copyColor('#7A500C',this)"><div class="cs-step-color" style="background:#7A500C;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">800</div><div class="cs-step-hex">#7A500C</div><div class="cs-step-var">--pluss-800</div></div></div>
+          <div class="cs-step" onclick="copyColor('#684210',this)"><div class="cs-step-color" style="background:#684210;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">900</div><div class="cs-step-hex">#684210</div><div class="cs-step-var">--pluss-900</div></div></div>
+        </div>
+      </div>
+
+      <!-- ─── PAPERY (WARM CREAM) ───────────────────── -->
+      <h3 class="subsection-title" id="colors-papery">Papery (Warm Cream)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">The warm cream scale for page backgrounds, card surfaces, and print-style layouts. Base value <code>#F7F4F0</code> maps to step <strong>50</strong>. Darker steps work as subtle warm borders and muted text.</p>
+      <div class="cs-family">
+        <div class="cs-family-header"><span class="cs-family-name">papery</span><span class="cs-family-base">--color-papery-{step}</span></div>
+        <div class="cs-strip">
+          <div class="cs-step is-base" onclick="copyColor('#F7F4F0',this)"><div class="cs-step-color" style="background:#F7F4F0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">50</div><div class="cs-step-hex">#F7F4F0</div><div class="cs-step-var">--papery-50</div></div></div>
+          <div class="cs-step" onclick="copyColor('#EFEBE4',this)"><div class="cs-step-color" style="background:#EFEBE4;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">100</div><div class="cs-step-hex">#EFEBE4</div><div class="cs-step-var">--papery-100</div></div></div>
+          <div class="cs-step" onclick="copyColor('#E3DDD3',this)"><div class="cs-step-color" style="background:#E3DDD3;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">200</div><div class="cs-step-hex">#E3DDD3</div><div class="cs-step-var">--papery-200</div></div></div>
+          <div class="cs-step" onclick="copyColor('#D5CCC0',this)"><div class="cs-step-color" style="background:#D5CCC0;border-bottom:1px solid #eee;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">300</div><div class="cs-step-hex">#D5CCC0</div><div class="cs-step-var">--papery-300</div></div></div>
+          <div class="cs-step" onclick="copyColor('#BFB4A5',this)"><div class="cs-step-color" style="background:#BFB4A5;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">400</div><div class="cs-step-hex">#BFB4A5</div><div class="cs-step-var">--papery-400</div></div></div>
+          <div class="cs-step" onclick="copyColor('#A69A89',this)"><div class="cs-step-color" style="background:#A69A89;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">500</div><div class="cs-step-hex">#A69A89</div><div class="cs-step-var">--papery-500</div></div></div>
+          <div class="cs-step" onclick="copyColor('#8D806F',this)"><div class="cs-step-color" style="background:#8D806F;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">600</div><div class="cs-step-hex">#8D806F</div><div class="cs-step-var">--papery-600</div></div></div>
+          <div class="cs-step" onclick="copyColor('#736758',this)"><div class="cs-step-color" style="background:#736758;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">700</div><div class="cs-step-hex">#736758</div><div class="cs-step-var">--papery-700</div></div></div>
+          <div class="cs-step" onclick="copyColor('#5C5145',this)"><div class="cs-step-color" style="background:#5C5145;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">800</div><div class="cs-step-hex">#5C5145</div><div class="cs-step-var">--papery-800</div></div></div>
+          <div class="cs-step" onclick="copyColor('#474036',this)"><div class="cs-step-color" style="background:#474036;"><div class="cs-step-copied">Copied!</div></div><div class="cs-step-info"><div class="cs-step-num">900</div><div class="cs-step-hex">#474036</div><div class="cs-step-var">--papery-900</div></div></div>
+        </div>
+      </div>
+
+      <!-- ─── CATEGORY & ACCENT COLORS ──────────────── -->
+      <h3 class="subsection-title" id="colors-category">Category &amp; Accent Colors</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">Single-value utility colors for news category tags, alerts, and engagement UI. These do not use a full 10-step scale — each is a standalone token with documented contrast behaviour.</p>
+      <div class="cc-grid" style="margin-bottom:var(--space-xl);">
+        <div class="cc-chip" onclick="copyColor('#E85D04',this)"><div class="cc-dot" style="background:#E85D04;"></div><div class="cc-info"><div class="cc-name">Sport / Alert Orange</div><div class="cc-hex">#E85D04</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#0A2463',this)"><div class="cc-dot" style="background:#0A2463;"></div><div class="cc-info"><div class="cc-name">Arvamus / Navy</div><div class="cc-hex">#0A2463</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#1A6E45',this)"><div class="cc-dot" style="background:#1A6E45;"></div><div class="cc-info"><div class="cc-name">Elu / Green</div><div class="cc-hex">#1A6E45</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#2C5F2E',this)"><div class="cc-dot" style="background:#2C5F2E;"></div><div class="cc-info"><div class="cc-name">Majandus / Forest</div><div class="cc-hex">#2C5F2E</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#E30613',this)"><div class="cc-dot" style="background:#E30613;"></div><div class="cc-info"><div class="cc-name">Live / Breaking Red</div><div class="cc-hex">#E30613</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#D4600A',this)"><div class="cc-dot" style="background:#D4600A;"></div><div class="cc-info"><div class="cc-name">Urgent Amber</div><div class="cc-hex">#D4600A</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#C0392B',this)"><div class="cc-dot" style="background:#C0392B;"></div><div class="cc-info"><div class="cc-name">Vote Down</div><div class="cc-hex">#C0392B</div></div><span class="cc-contrast on-color">white text</span></div>
+        <div class="cc-chip" onclick="copyColor('#FFFFFF',this)"><div class="cc-dot" style="background:#FFFFFF;border:1px solid #ddd;"></div><div class="cc-info"><div class="cc-name">Surface White</div><div class="cc-hex">#FFFFFF</div></div><span class="cc-contrast on-white">dark text</span></div>
+      </div>
+
+      <!-- ─── LEGACY ALIAS TABLE ────────────────────── -->
+      <h3 class="subsection-title">Legacy Token Aliases</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-md);">Old tokens still work — they alias to the new scale via <code>var()</code> references. Migrate to the scale names in new code.</p>
+      <table class="data-table" style="margin-bottom:var(--space-xl);">
+        <thead><tr><th>Legacy Token</th><th>New Scale Token</th><th>HEX</th></tr></thead>
+        <tbody>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-brand-red</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-primary-600</code></td><td>#D0021B</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-brand-red-dark</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-primary-700</code></td><td>#A50015</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-brand-red-light</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-primary-100</code></td><td>#FDE3E5</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-black</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-900</code></td><td>#0D0D0D</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-800</code></td><td>#1A1A1A</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink-80</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-700</code></td><td>#333333</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink-60</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-600</code></td><td>#666666</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink-40</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-500</code></td><td>#999999</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-rule</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-300</code></td><td>#E0E0E0</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-surface-warm</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-100</code></td><td>#F7F4F0</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-surface-paper</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-neutral-50</code></td><td>#FAFAF8</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-premium-gold</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-pluss-500</code></td><td>#C9910A</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-premium-bg</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-pluss-50</code></td><td>#FDF8EC</td></tr>
+          <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-accent-yellow</code></td><td><code style="font-family:var(--font-mono);font-size:11px;">--color-secondary-400</code></td><td>#F6C90E</td></tr>
+        </tbody>
+      </table>
+
+      <!-- ─── CSS ROOT BLOCK ────────────────────────── -->
+      <h3 class="subsection-title">CSS Root Variables</h3>
+      <div class="code-block" style="max-height:320px;overflow-y:auto;"><span class="cm">/* Õhtuleht Color Scales — /css/tokens.css */</span>
+:root {
+  <span class="cm">/* Primary (Red) — base at 600 */</span>
+  <span class="cv">--color-primary-50</span>:  <span class="val">#FEF2F2</span>;
+  <span class="cv">--color-primary-600</span>: <span class="val">#D0021B</span>; <span class="cm">/* ★ base */</span>
+  <span class="cv">--color-primary-900</span>: <span class="val">#760618</span>;
+
+  <span class="cm">/* Neutral (Gray) — base at 900 */</span>
+  <span class="cv">--color-neutral-50</span>:  <span class="val">#FAFAF8</span>;
+  <span class="cv">--color-neutral-300</span>: <span class="val">#E0E0E0</span>;
+  <span class="cv">--color-neutral-900</span>: <span class="val">#0D0D0D</span>; <span class="cm">/* ★ base */</span>
+
+  <span class="cm">/* Secondary (Yellow) — base at 400 */</span>
+  <span class="cv">--color-secondary-400</span>: <span class="val">#F6C90E</span>; <span class="cm">/* ★ base */</span>
+  <span class="cv">--color-secondary-900</span>: <span class="val">#6F4312</span>;
+
+  <span class="cm">/* Pluss (Gold) — base at 500 */</span>
+  <span class="cv">--color-pluss-500</span>: <span class="val">#C9910A</span>; <span class="cm">/* ★ base */</span>
+  <span class="cv">--color-pluss-900</span>: <span class="val">#684210</span>;
+
+  <span class="cm">/* Papery (Warm Cream) — base at 50 */</span>
+  <span class="cv">--color-papery-50</span>:  <span class="val">#F7F4F0</span>; <span class="cm">/* ★ base */</span>
+  <span class="cv">--color-papery-500</span>: <span class="val">#A69A89</span>;
+  <span class="cv">--color-papery-900</span>: <span class="val">#474036</span>;
+
+  <span class="cm">/* Legacy aliases — see tokens.css for full list */</span>
+  <span class="cv">--color-brand-red</span>: <span class="val">var(--color-primary-600)</span>;
+  <span class="cv">--color-black</span>:     <span class="val">var(--color-neutral-900)</span>;
+}</div>
+    </section>
+
+    <!-- ═══════════ TYPOGRAPHY ═══════════ -->
+    <section class="section" id="typography">
+      <div class="section-eyebrow">Type System</div>
+      <h2 class="section-title">Typography</h2>
+      <p class="section-desc">Classical editorial serif paired with modern sans-serif — journalistic authority with digital readability.</p>
+
+      <h3 class="subsection-title" id="type-families">Font Families</h3>
+      <div class="font-family-grid">
+        <div class="font-card"><div class="font-card-name">Display Serif</div><div class="font-card-specimen" style="font-family:var(--font-serif);font-weight:700;">Uudised<br>Today.</div><div class="font-card-alphabet" style="font-family:var(--font-serif);">AaBbCcDdEeFf ÕõÄäÖöÜü<br>0123456789 !?.,;:—–""</div><div class="font-card-weights"><span class="weight-chip" style="font-family:var(--font-serif);font-weight:400;">400</span><span class="weight-chip" style="font-family:var(--font-serif);font-weight:500;">500</span><span class="weight-chip" style="font-family:var(--font-serif);font-weight:600;">600</span><span class="weight-chip" style="font-family:var(--font-serif);font-weight:700;">700</span><span class="weight-chip" style="font-family:var(--font-serif);font-style:italic;">Italic</span></div><div class="font-card-role"><strong>Lora</strong><br>Headlines, titles, pull quotes<br><code style="font-family:var(--font-mono);font-size:11px;">--font-serif</code></div></div>
+        <div class="font-card"><div class="font-card-name">UI Sans-Serif</div><div class="font-card-specimen" style="font-family:var(--font-sans);font-weight:500;">Lugeja<br>Reader.</div><div class="font-card-alphabet" style="font-family:var(--font-sans);">AaBbCcDdEeFf ÕõÄäÖöÜü<br>0123456789 !?.,;:—–""</div><div class="font-card-weights"><span class="weight-chip" style="font-family:var(--font-sans);font-weight:300;">300</span><span class="weight-chip" style="font-family:var(--font-sans);font-weight:400;">400</span><span class="weight-chip" style="font-family:var(--font-sans);font-weight:500;">500</span><span class="weight-chip" style="font-family:var(--font-sans);font-weight:600;">600</span></div><div class="font-card-role"><strong>DM Sans</strong> <span class="placeholder">[CONFIRM]</span><br>Body, UI labels, navigation, meta<br><code style="font-family:var(--font-mono);font-size:11px;">--font-sans</code></div></div>
+        <div class="font-card"><div class="font-card-name">Monospace</div><div class="font-card-specimen" style="font-family:var(--font-mono);font-weight:400;font-size:36px;">#D0021B<br>--var</div><div class="font-card-alphabet" style="font-family:var(--font-mono);">AaBbCcDd 0123456789<br>#() [] {} &lt;/&gt; _-+=</div><div class="font-card-weights"><span class="weight-chip" style="font-family:var(--font-mono);">400</span><span class="weight-chip" style="font-family:var(--font-mono);font-weight:500;">500</span></div><div class="font-card-role"><strong>DM Mono</strong><br>Code, tokens, HEX values<br><code style="font-family:var(--font-mono);font-size:11px;">--font-mono</code></div></div>
+      </div>
+
+      <h3 class="subsection-title" id="type-hierarchy">Type Hierarchy</h3>
+      <div class="type-specimen">
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">H1 / Display</div><div class="type-meta-spec">Size: <span>4.5rem / 72px</span><br>Weight: <span>900</span><br>Line: <span>1.2</span><br>Serif · <span>--text-6xl</span></div></div><div class="type-preview"><div style="font-size:clamp(36px,5vw,72px);font-weight:900;line-height:1.2;font-family:var(--font-serif);">Eesti uudised</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">H2 / Headline</div><div class="type-meta-spec">Size: <span>3rem / 48px</span><br>Weight: <span>700</span><br>Line: <span>1.2</span><br>Serif · <span>--text-4xl</span></div></div><div class="type-preview"><div style="font-size:clamp(28px,4vw,48px);font-weight:700;line-height:1.2;font-family:var(--font-serif);">Tänahommikune uudis</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">H3 / Section</div><div class="type-meta-spec">Size: <span>2.25rem / 36px</span><br>Weight: <span>700</span><br>Line: <span>1.35</span><br>Serif · <span>--text-3xl</span></div></div><div class="type-preview"><div style="font-size:clamp(22px,3.5vw,36px);font-weight:700;line-height:1.35;font-family:var(--font-serif);">Rubriigi pealkiri</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">H4 / Subheading</div><div class="type-meta-spec">Size: <span>1.5rem / 24px</span><br>Weight: <span>600</span><br>Line: <span>1.35</span><br>Sans · <span>--text-xl</span></div></div><div class="type-preview"><div style="font-size:24px;font-weight:600;line-height:1.35;font-family:var(--font-sans);">Lõigu alapealkirja tekst</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">Body / Lead</div><div class="type-meta-spec">Size: <span>1.125rem / 18px</span><br>Weight: <span>400</span><br>Line: <span>1.75</span><br>Sans · <span>--text-md</span></div></div><div class="type-preview"><div style="font-size:18px;font-weight:400;line-height:1.75;font-family:var(--font-sans);max-width:480px;">Uudise sissejuhatav tekst, mis annab lugejale kiire ülevaate.</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">Body</div><div class="type-meta-spec">Size: <span>1rem / 16px</span><br>Weight: <span>400</span><br>Line: <span>1.55</span><br>Sans · <span>--text-base</span></div></div><div class="type-preview"><div style="font-size:16px;font-weight:400;line-height:1.55;font-family:var(--font-sans);max-width:480px;">Artikli põhitekst on kirjutatud selge ja loetava stiilina.</div></div></div>
+        <div class="type-specimen-row"><div class="type-meta"><div class="type-meta-label">Caption</div><div class="type-meta-spec">Size: <span>0.75rem / 12px</span><br>Weight: <span>400</span><br>Line: <span>1.55</span><br>Sans · <span>--text-xs</span></div></div><div class="type-preview"><div style="font-size:12px;font-weight:400;line-height:1.55;font-family:var(--font-sans);color:var(--color-ink-60);">Foto: SCANPIX · 14. märts 2024 · 3 min lugemist</div></div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SPACING ═══════════ -->
+    <section class="section" id="spacing">
+      <div class="section-eyebrow">Layout System</div>
+      <h2 class="section-title">Layout &amp; Spacing</h2>
+      <p class="section-desc">Consistent spacing and grid ensure visual rhythm.</p>
+
+      <h3 class="subsection-title">Grid System</h3>
+      <div class="grid-demo"><div class="grid-demo-inner"><div class="grid-col">1</div><div class="grid-col">2</div><div class="grid-col">3</div><div class="grid-col">4</div><div class="grid-col">5</div><div class="grid-col">6</div><div class="grid-col">7</div><div class="grid-col">8</div><div class="grid-col">9</div><div class="grid-col">10</div><div class="grid-col">11</div><div class="grid-col">12</div></div></div>
+
+      <table class="data-table" style="margin-bottom:var(--space-2xl);"><thead><tr><th>Property</th><th>Value</th><th>Notes</th></tr></thead><tbody>
+        <tr><td>Columns</td><td><strong>12</strong></td><td>Standard grid</td></tr>
+        <tr><td>Gutter</td><td><strong>24px</strong></td><td>Between columns</td></tr>
+        <tr><td>Max container</td><td><strong>1280px</strong></td><td>Main content wrapper</td></tr>
+      </tbody></table>
+
+      <h3 class="subsection-title">Spacing Scale</h3>
+      <table class="data-table"><thead><tr><th>Token</th><th>Variable</th><th>px</th><th>Usage</th><th>Visual</th></tr></thead><tbody>
+        <tr><td><span class="token-badge">xs</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-xs</td><td>4px</td><td>Icon gaps</td><td><div class="spacing-bar" style="width:4px;"></div></td></tr>
+        <tr><td><span class="token-badge">sm</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-sm</td><td>8px</td><td>Label padding</td><td><div class="spacing-bar" style="width:8px;"></div></td></tr>
+        <tr><td><span class="token-badge">md</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-md</td><td>16px</td><td>Card padding</td><td><div class="spacing-bar" style="width:16px;"></div></td></tr>
+        <tr><td><span class="token-badge">lg</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-lg</td><td>24px</td><td>Section padding</td><td><div class="spacing-bar" style="width:24px;"></div></td></tr>
+        <tr><td><span class="token-badge">xl</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-xl</td><td>32px</td><td>Component separation</td><td><div class="spacing-bar" style="width:32px;"></div></td></tr>
+        <tr><td><span class="token-badge">2xl</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-2xl</td><td>48px</td><td>Section padding</td><td><div class="spacing-bar" style="width:48px;"></div></td></tr>
+        <tr><td><span class="token-badge">3xl</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-3xl</td><td>64px</td><td>Page section breaks</td><td><div class="spacing-bar" style="width:64px;"></div></td></tr>
+        <tr><td><span class="token-badge">4xl</span></td><td style="font-family:var(--font-mono);font-size:var(--text-xs);">--space-4xl</td><td>96px</td><td>Hero padding</td><td><div class="spacing-bar" style="width:96px;max-width:100%;"></div></td></tr>
+      </tbody></table>
+    </section>
+
+    <!-- ═══════════ UI ELEMENTS ═══════════ -->
+    <section class="section" id="ui-elements">
+      <div class="section-eyebrow">Components</div>
+      <h2 class="section-title">UI Elements</h2>
+      <p class="section-desc">Core UI components styled to the brand.</p>
+
+      <div class="ui-showcase"><div class="ui-showcase-title">Buttons</div>
+        <div class="btn-row"><button class="btn btn-primary">Loe edasi</button><button class="btn btn-secondary">Telli uudiskiri</button><button class="btn btn-ghost">Loe rohkem</button><button class="btn btn-dark">Sisene</button></div>
+        <div class="btn-row"><button class="btn btn-primary btn-sm">Väike</button><button class="btn btn-primary">Tavaline</button><button class="btn btn-primary btn-lg">Suur</button></div>
+      </div>
+      <div class="ui-showcase"><div class="ui-showcase-title">Category Tags</div>
+        <div class="tag-row"><span class="badge badge--pill badge--breaking">🔴 Breaking</span><span class="badge badge--pill badge--news">Uudised</span><span class="badge badge--pill badge--politics">Poliitika</span><span class="badge badge--pill badge--economy">Majandus</span><span class="badge badge--pill badge--sport">Sport</span><span class="badge badge--pill badge--culture">Kultuur</span><span class="badge badge--pill badge--opinion">Arvamus</span><span class="badge badge--pill badge--feature">Elustiil</span></div>
+      </div>
+      <div class="ui-showcase"><div class="ui-showcase-title">Breaking News Bar</div>
+        <div class="breaking-bar"><span class="badge badge--dark">KIIRTEADE</span><span>Valitsus kinnitas uue eelarvekava — täpsemalt siin</span></div>
+      </div>
+      <div class="ui-showcase"><div class="ui-showcase-title">Form Inputs</div>
+        <div class="form-field"><label class="form-label">E-post</label><input class="form-input" type="email" placeholder="sinu@email.ee"></div>
+        <div class="form-field"><label class="form-label">Viga (Error)</label><input class="form-input error" type="text" value="vale@kiri"><div style="font-size:var(--text-xs);color:var(--color-brand-red);margin-top:4px;">Sisesta korrektne e-posti aadress.</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ GLOBAL NAVIGATION ═══════════ -->
+    <section class="section chapter-header" id="global-nav">
+      <div class="section-eyebrow">System Components</div>
+      <h2 class="section-title">Global Navigation</h2>
+      <p class="section-desc">The production ohtuleht.ee header uses a two-tier navigation: a primary red category bar and a white secondary utility bar. On mobile, both collapse into a single hamburger-driven menu.</p>
+    </section>
+
+    <section class="section" id="gn-primary-bar">
+      <div class="section-eyebrow">Navigation Tier 1</div>
+      <h2 class="section-title">Primary Navigation (Red Bar)</h2>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">The thick red bar contains main theme categories. Height: <strong>44px</strong>. Background: <code>--color-brand-red</code>. Links are uppercase, white, 13px DM Sans bold.</p>
+
+      <div class="nav-state-label">Desktop — Full Width</div>
+      <div style="margin-bottom:var(--space-lg);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-rule);">
+        <div class="gn-primary">
+          <div class="gn-primary-inner">
+            <a href="#" class="gn-primary-link is-active">UUDISED</a>
+            <a href="#" class="gn-primary-link">MELU</a>
+            <a href="#" class="gn-primary-link">SPORT</a>
+            <a href="#" class="gn-primary-link">KRIMI</a>
+            <a href="#" class="gn-primary-link">ELU</a>
+            <a href="#" class="gn-primary-link">ARVAMUS</a>
+            <a href="#" class="gn-primary-link">MAJANDUS</a>
+            <a href="#" class="gn-primary-link">TERVIS</a>
+            <a href="#" class="gn-promo"><span class="gn-promo-star">★</span> DIGIPAKETT 3.99€</a>
+          </div>
+        </div>
+      </div>
+      <div class="gn-spec-row">
+        <span class="gn-spec-chip">height: 44px</span>
+        <span class="gn-spec-chip">bg: --color-brand-red</span>
+        <span class="gn-spec-chip">font: 13px / bold / uppercase</span>
+        <span class="gn-spec-chip">link hover: rgba(0,0,0,0.18)</span>
+        <span class="gn-spec-chip">promo bg: --color-accent-yellow</span>
+      </div>
+
+      <div class="callout" style="margin-top:var(--space-xl);"><strong>Subscription Promo:</strong> The yellow <code>DIGIPAKETT</code> element is right-aligned inside the primary bar. Background uses <code>--color-accent-yellow</code>. Text is black, 11px bold uppercase. This element is hidden on mobile (&lt;900px).</div>
+
+      <h3 class="subsection-title" id="gn-secondary-bar">Secondary Navigation (White Bar)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">The white bar below the primary nav contains sub-categories, utilities, search input, and CTA buttons. Height: <strong>40px</strong>. Background: white. Border-bottom: 1px <code>--color-rule</code>.</p>
+
+      <div class="nav-state-label">Desktop — Sub-Categories + Utilities</div>
+      <div style="margin-bottom:var(--space-lg);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-rule);">
+        <div class="gn-primary">
+          <div class="gn-primary-inner">
+            <a href="#" class="gn-primary-link is-active">UUDISED</a>
+            <a href="#" class="gn-primary-link">MELU</a>
+            <a href="#" class="gn-primary-link">SPORT</a>
+            <a href="#" class="gn-primary-link">KRIMI</a>
+            <a href="#" class="gn-primary-link">ELU</a>
+            <a href="#" class="gn-primary-link">ARVAMUS</a>
+            <a href="#" class="gn-primary-link">MAJANDUS</a>
+            <a href="#" class="gn-promo"><span class="gn-promo-star">★</span> DIGIPAKETT</a>
+          </div>
+        </div>
+        <div class="gn-secondary">
+          <div class="gn-secondary-inner">
+            <a href="#" class="gn-secondary-link is-active">Eesti</a>
+            <a href="#" class="gn-secondary-link">Välismaa</a>
+            <a href="#" class="gn-secondary-link">Tallinn</a>
+            <a href="#" class="gn-secondary-link">Tartu</a>
+            <a href="#" class="gn-secondary-link">Pärnu</a>
+            <a href="#" class="gn-secondary-link">Galerii</a>
+            <a href="#" class="gn-secondary-link">Video</a>
+            <div class="gn-utility">
+              <button class="gn-search-btn">🔍 Otsi</button>
+              <button class="gn-cta-subscribe">TELLI</button>
+              <button class="gn-cta-login">SISENE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gn-spec-row">
+        <span class="gn-spec-chip">height: 40px</span>
+        <span class="gn-spec-chip">bg: white</span>
+        <span class="gn-spec-chip">font: 12px / medium</span>
+        <span class="gn-spec-chip">active: --color-brand-red</span>
+        <span class="gn-spec-chip">border-bottom: 1px --color-rule</span>
+      </div>
+
+      <div class="spec-box" style="margin-top:var(--space-xl);">
+        <strong>CTA Buttons:</strong><br>
+        <span class="prop">TELLI</span>: bg <span class="val">--color-brand-red</span>, white text, 11px bold uppercase, radius <span class="val">--radius-md</span><br>
+        <span class="prop">SISENE</span>: transparent bg, 1px <span class="val">--color-rule</span> border, <span class="val">--color-ink-60</span> text, 11px semibold
+      </div>
+
+      <h3 class="subsection-title" id="gn-mobile">Mobile Collapse</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Below 900px, both bars collapse. A single red bar shows the logo, hamburger icon, and a compact subscription CTA. The full navigation appears in a slide-out drawer.</p>
+
+      <div class="nav-state-label">Mobile — Collapsed Header (≤900px)</div>
+      <div style="max-width:375px;margin-bottom:var(--space-lg);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-rule);">
+        <div class="gn-mobile-bar" style="display:flex;">
+          <button class="gn-hamburger">☰</button>
+          <div class="gn-mobile-logo">Õhtuleht<span>.</span></div>
+          <div class="gn-mobile-actions">
+            <button class="gn-mobile-cta">★ TELLI</button>
+            <span style="color:white;font-size:18px;">🔍</span>
+          </div>
+        </div>
+      </div>
+      <div class="gn-spec-row" style="margin-bottom:var(--space-xl);">
+        <span class="gn-spec-chip">height: 48px</span>
+        <span class="gn-spec-chip">bg: --color-brand-red</span>
+        <span class="gn-spec-chip">breakpoint: 900px</span>
+        <span class="gn-spec-chip">hamburger opens slide-out drawer</span>
+      </div>
+
+      <div class="callout"><strong>Responsive behaviour:</strong> At <code>≤900px</code>, <code>.gn-primary</code> and <code>.gn-secondary</code> get <code>display: none</code>. The <code>.gn-mobile-bar</code> becomes visible. The yellow promo is hidden. Categories move into a full-screen drawer triggered by the hamburger button.</div>
+    </section>
+
+    <!-- ═══════════ TOKENS ═══════════ -->
+    <section class="section" id="tokens">
+      <div class="section-eyebrow">Implementation</div>
+      <h2 class="section-title">Design Tokens</h2>
+      <p class="section-desc">All decisions as CSS custom properties. Import <code>tokens.css</code> into your main stylesheet.</p>
+      <div class="code-block"><span class="cm">/* Õhtuleht Design Tokens — /css/tokens.css */</span>
+:root {
+  <span class="cm">/* Color Scales (50–900) — 5 families × 10 steps */</span>
+  <span class="cv">--color-primary-600</span>:  <span class="val">#D0021B</span>;  <span class="cm">/* ★ brand red */</span>
+  <span class="cv">--color-neutral-900</span>:  <span class="val">#0D0D0D</span>;  <span class="cm">/* ★ brand black */</span>
+  <span class="cv">--color-secondary-400</span>: <span class="val">#F6C90E</span>; <span class="cm">/* ★ accent yellow */</span>
+  <span class="cv">--color-pluss-500</span>:    <span class="val">#C9910A</span>;  <span class="cm">/* ★ premium gold */</span>
+  <span class="cv">--color-papery-50</span>:    <span class="val">#F7F4F0</span>;  <span class="cm">/* ★ warm cream */</span>
+
+  <span class="cm">/* Legacy aliases */</span>
+  <span class="cv">--color-brand-red</span>: <span class="val">var(--color-primary-600)</span>;
+  <span class="cv">--color-black</span>:     <span class="val">var(--color-neutral-900)</span>;
+
+  <span class="cm">/* Typography, spacing, etc. */</span>
+  <span class="cv">--font-serif</span>:   <span class="val">'Lora', Georgia, serif</span>;
+  <span class="cv">--font-sans</span>:    <span class="val">'DM Sans', Helvetica Neue, sans-serif</span>;
+  <span class="cv">--text-xs</span>: <span class="val">0.75rem</span>;   <span class="cm">/* 12px */</span>
+  <span class="cv">--space-md</span>:  <span class="val">16px</span>;
+  <span class="cv">--radius-lg</span>:  <span class="val">8px</span>;
+  <span class="cv">--shadow-md</span>:  <span class="val">0 4px 12px rgba(0,0,0,0.10)</span>;
+  <span class="cm">/* See tokens.css for all 50 scale steps + aliases */</span>
+}</div>
+    </section>
+
+    <!-- ═══════════ EDITORIAL ═══════════ -->
+    <section class="section chapter-header" id="editorial-typography">
+      <div class="section-eyebrow">Phase 2 — Editorial Guidelines</div>
+      <h2 class="section-title">Editorial Typography &amp; Article Layout</h2>
+      <p class="section-desc">Rules for long-form journalism — readability, accessibility, and brand consistency.</p>
+    </section>
+
+    <section class="section" id="edit-rich-text">
+      <div class="section-eyebrow">Rich Text</div>
+      <h2 class="section-title">Rich Text Elements</h2>
+      <p class="section-desc">Quotes, lists, captions, drop caps, and inline links.</p>
+
+      <h3 class="subsection-title">Drop Cap</h3>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div class="article-body has-dropcap" style="max-width:560px;">
+          <p>Eesti poliitika on viimastel kuudel läbinud kiired muutused. Uue valitsuskoalitsiooni moodustamine tõi kaasa ootamatuid nihkeid nii majandus- kui ka sotsiaalpoliitikas.</p>
+          <p>Teine lõik jätkub tavapärases kirjastiilis, ilma suurtäheta.</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Blockquote</h3>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <blockquote class="article-blockquote"><p>"Me ei saa lubada, et majandus kasvab automaatselt — selleks on vaja konkreetseid meetmeid."</p><cite>Peaminister, Riigikogu istung, märts 2024</cite></blockquote>
+      </div>
+
+      <h3 class="subsection-title">Pull Quote</h3>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div class="pull-quote" style="max-width:480px;margin:0 auto;"><p>"Eesti on väike riik, kuid meie ambitsioonid on suured."</p></div>
+      </div>
+
+      <h3 class="subsection-title">Inline Links</h3>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div class="article-body" style="max-width:560px;"><p>Vaata täpsemaid andmeid <a href="#">Statistikaameti kodulehelt</a> või loe meie eelmist <a href="#">põhjalikku analüüsi</a>.</p></div>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY -->
+    <section class="section" id="edit-accessibility">
+      <div class="section-eyebrow">WCAG 2.1</div>
+      <h2 class="section-title">Accessibility &amp; Contrast</h2>
+      <p class="section-desc">All text must meet WCAG 2.1 AA minimum. Long-form targets AAA (7:1).</p>
+      <table class="data-table" style="margin-bottom:var(--space-xl);"><thead><tr><th>Colour</th><th>Background</th><th>Ratio</th><th>Level</th><th>Usage</th></tr></thead><tbody>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink #1A1A1A</code></td><td>White</td><td><strong>16.8:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-aaa">AAA</span></td><td>Body text, headings</td></tr>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink-60 #666666</code></td><td>White</td><td><strong>5.74:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-aa">AA</span></td><td>Secondary text, captions</td></tr>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-ink-40 #999999</code></td><td>White</td><td><strong>2.85:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-fail">Fail</span></td><td>Decorative only — NOT for text</td></tr>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">--color-brand-red #D0021B</code></td><td>White</td><td><strong>5.90:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-aa">AA</span></td><td>Links, accents</td></tr>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">White on Brand Red</code></td><td>Red</td><td><strong>5.90:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-aa">AA</span></td><td>Buttons, banners</td></tr>
+        <tr><td><code style="font-family:var(--font-mono);font-size:11px;">White on Black</code></td><td>Black</td><td><strong>19.6:1</strong></td><td><span class="badge badge--pill badge--wcag badge--wcag-aaa">AAA</span></td><td>Header, footer</td></tr>
+      </tbody></table>
+    </section>
+
+    <!-- ═══════════ NEWS CARDS ═══════════ -->
+    <section class="section chapter-header" id="news-components">
+      <div class="section-eyebrow">Editorial Guidelines</div>
+      <h2 class="section-title">News Cards &amp; Feeds</h2>
+      <p class="section-desc">Three canonical card formats: category → headline → lead → metadata.</p>
+    </section>
+    <section class="section" id="nc-hero">
+      <div class="section-eyebrow">Card Variant 1</div>
+      <h2 class="section-title">Hero / Featured Card</h2>
+      <div style="margin-bottom:var(--space-xl);"><div class="nc nc--hero" style="min-height:380px;"><div class="nc-thumb">Feature image — 1600×900px</div><div class="nc--hero-overlay"></div><div class="nc-body"><div class="nc-cat" style="color:var(--color-brand-red);">Poliitika</div><div class="nc-headline" style="font-size:clamp(22px,3.5vw,40px);color:white;margin-bottom:var(--space-sm);">Riigikogu kiitis heaks uue eelarvekava</div><div class="nc-lead" style="color:rgba(255,255,255,0.72);">Parlamendis toetasid muudatust 56 saadikut, vastu hääletasid 34.</div></div></div></div>
+    </section>
+    <section class="section" id="nc-standard">
+      <div class="section-eyebrow">Card Variant 2</div>
+      <h2 class="section-title">Standard Feed Card</h2>
+      <div style="max-width:480px;margin-bottom:var(--space-xl);"><div class="nc nc--standard"><div class="nc-thumb">Image</div><div class="nc-body"><div class="nc-cat">Majandus</div><div class="nc-headline">Eesti eksport kasvas veebruaris 12 protsenti</div><div class="nc-lead">Kasv kõige märgatavam masinate sektoris.</div><div class="nc-meta"><span>14. märts</span><span class="nc-meta-dot">3 min</span></div></div></div></div>
+    </section>
+    <section class="section" id="nc-compact">
+      <div class="section-eyebrow">Card Variant 3</div>
+      <h2 class="section-title">Compact List</h2>
+      <div style="max-width:460px;margin-bottom:var(--space-xl);"><div class="nc-list">
+        <div class="nc nc--compact"><div class="nc-compact-num">1</div><div class="nc-compact-body"><div class="nc-cat" style="font-size:10px;">Sport</div><div class="nc-headline-sm">Eesti korvpallikoondis alistas Lätit</div><div class="nc-meta"><span>2h tagasi</span></div></div></div>
+        <div class="nc nc--compact"><div class="nc-compact-num">2</div><div class="nc-compact-body"><div class="nc-cat" style="font-size:10px;">Poliitika</div><div class="nc-headline-sm">Peaminister teeb avalduse kell 15</div><div class="nc-meta"><span>4h tagasi</span></div></div></div>
+        <div class="nc nc--compact"><div class="nc-compact-num">3</div><div class="nc-compact-body"><div class="nc-cat" style="font-size:10px;">Kultuur</div><div class="nc-headline-sm">Festivali piletid müüdi 20 minutiga läbi</div><div class="nc-meta"><span>6h tagasi</span></div></div></div>
+      </div></div>
+    </section>
+
+    <!-- ═══════════ SECTION HEADERS & THEMATIC BANNERS ═══════════ -->
+    <section class="section chapter-header" id="section-headers">
+      <div class="section-eyebrow">Editorial Guidelines</div>
+      <h2 class="section-title">Section Headers &amp; Thematic Banners</h2>
+      <p class="section-desc">Standardised block headers and decorative thematic dividers that separate content sections on the homepage and category pages.</p>
+    </section>
+
+    <section class="section" id="sh-block-headers">
+      <div class="section-eyebrow">Section Component</div>
+      <h2 class="section-title">Block Headers</h2>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">A solid red title block on the left, an expanding rule, and an optional right-aligned action link. Used at the top of every homepage content block.</p>
+
+      <h3 class="subsection-title">Default (Title Only)</h3>
+      <div style="max-width:640px;margin-bottom:var(--space-xl);">
+        <div class="sh-block"><div class="sh-block-title">UUDISED</div><div class="sh-block-rule"></div></div>
+      </div>
+
+      <h3 class="subsection-title">With Action Link</h3>
+      <div style="max-width:640px;margin-bottom:var(--space-xl);">
+        <div class="sh-block"><div class="sh-block-title">GALERII</div><div class="sh-block-rule"></div><a href="#" class="sh-block-action">VAATA PILTE →</a></div>
+      </div>
+
+      <h3 class="subsection-title">Category Variants</h3>
+      <div class="sh-block-grid">
+        <div>
+          <div class="sh-block"><div class="sh-block-title">SPORT</div><div class="sh-block-rule"></div></div>
+          <div class="sh-block"><div class="sh-block-title" style="background:var(--color-accent-navy);">ARVAMUS</div><div class="sh-block-rule"></div></div>
+          <div class="sh-block"><div class="sh-block-title" style="background:#2C5F2E;">MAJANDUS</div><div class="sh-block-rule"></div></div>
+        </div>
+        <div>
+          <div class="sh-block"><div class="sh-block-title" style="background:var(--color-black);">KRIMI</div><div class="sh-block-rule"></div></div>
+          <div class="sh-block"><div class="sh-block-title" style="background:var(--color-accent-orange);">MELU</div><div class="sh-block-rule"></div></div>
+          <div class="sh-block"><div class="sh-block-title" style="background:var(--color-accent-green);">ELU</div><div class="sh-block-rule"></div></div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <span class="prop">.sh-block-title</span>: bg <span class="val">--color-brand-red</span> (default), color white, 13px bold uppercase, padding 6px 14px<br>
+        <span class="prop">.sh-block-rule</span>: flex:1, height 1px, bg <span class="val">--color-rule</span><br>
+        <span class="prop">.sh-block-action</span>: 11px semibold uppercase, <span class="val">--color-ink-40</span>, hover → <span class="val">--color-brand-red</span><br>
+        <strong>Note:</strong> Category variants override <code>.sh-block-title</code> background via inline style or modifier class.
+      </div>
+
+      <h3 class="subsection-title" id="sh-thematic">Thematic Dividers</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Full-width decorative banners for special sections. Each uses a custom background colour with optional SVG texture patterns. These do not break the grid — they sit between card groups.</p>
+
+      <div class="th-banner-grid">
+        <div>
+          <div class="th-banner th-banner--arvamus"><div class="th-banner-title">ARVAMUS</div><div class="th-banner-icon">💬</div></div>
+          <div class="th-banner-note">bg: --color-brand-red + SVG bubble pattern</div>
+        </div>
+        <div>
+          <div class="th-banner th-banner--elu"><div class="th-banner-title">ELU</div><div class="th-banner-icon">🌿</div></div>
+          <div class="th-banner-note">bg: --color-accent-green + SVG leaf pattern</div>
+        </div>
+        <div>
+          <div class="th-banner th-banner--sport"><div class="th-banner-title">SPORT</div><div class="th-banner-icon">⚽</div></div>
+          <div class="th-banner-note">bg: --color-accent-orange (solid)</div>
+        </div>
+        <div>
+          <div class="th-banner th-banner--krimi"><div class="th-banner-title">KRIMI</div><div class="th-banner-icon">🔍</div></div>
+          <div class="th-banner-note">bg: --color-black (solid)</div>
+        </div>
+        <div>
+          <div class="th-banner th-banner--majandus"><div class="th-banner-title">MAJANDUS</div><div class="th-banner-icon">📊</div></div>
+          <div class="th-banner-note">bg: #2C5F2E (solid)</div>
+        </div>
+        <div>
+          <div class="th-banner th-banner--arvamus" style="background:var(--color-accent-navy);"><div class="th-banner-title">ANALÜÜS</div><div class="th-banner-icon">📝</div></div>
+          <div class="th-banner-note">bg: --color-accent-navy (solid)</div>
+        </div>
+      </div>
+
+      <div class="callout"><strong>Technical debt:</strong> The ARVAMUS and ELU banners use inline SVG <code>data:</code> URI patterns in the CSS <code>background-image</code>. These should be extracted to <code>/public/assets/patterns/</code> for maintainability. The SPORT, KRIMI, and MAJANDUS banners use flat colours with no pattern — this is intentional, not an omission.</div>
+    </section>
+
+    <!-- ═══════════ ALERTS & BREAKING ═══════════ -->
+    <section class="section chapter-header" id="alerts-breaking">
+      <div class="section-eyebrow">Editorial Guidelines</div>
+      <h2 class="section-title">Alerts &amp; Breaking News</h2>
+      <p class="section-desc">Three severity tiers — use sparingly to preserve impact.</p>
+    </section>
+    <section class="section" id="ab-ticker">
+      <div class="section-eyebrow">Breaking Components</div>
+      <h2 class="section-title">Banners &amp; Ticker</h2>
+
+      <h3 class="subsection-title">Tier 1 — Breaking (Red)</h3>
+      <div style="margin-bottom:var(--space-xl);"><div class="breaking-banner"><div class="badge badge--dark-pill"><span class="live-dot"></span> KIIRTEADE</div><div class="breaking-banner-text">Eesti Pank tõstis baasintressimäära 0.25pp</div><div class="breaking-banner-time">14:32</div></div></div>
+
+      <h3 class="subsection-title">Tier 2 — Urgent (Amber)</h3>
+      <div style="margin-bottom:var(--space-xl);"><div class="urgent-bar"><span class="urgent-icon">⚠</span><span>Transpordiamet hoiatab tugeva tuisu eest</span></div></div>
+
+      <h3 class="subsection-title">Ticker Bar</h3>
+      <div style="margin-bottom:var(--space-xl);"><div class="ticker-bar"><div class="ticker-label"><span class="live-dot"></span> LIVE</div><div class="ticker-track"><div class="ticker-items"><span class="ticker-item">Riigikogu hääletab eelarve üle kell 14:00</span><span class="ticker-item">Eesti koondis võitis 3:1 Lätit</span><span class="ticker-item">Eesti Panga inflatsiooniteade: 4.2%</span></div></div></div></div>
+    </section>
+
+    <!-- ═══════════ MONETIZATION ═══════════ -->
+    <section class="section chapter-header" id="monetization">
+      <div class="section-eyebrow">Editorial Guidelines</div>
+      <h2 class="section-title">Monetization &amp; Premium</h2>
+      <p class="section-desc">Premium indicators, paywall gates, and advertising rules.</p>
+    </section>
+    <section class="section" id="mon-pluss">
+      <div class="section-eyebrow">Premium Indicators</div>
+      <h2 class="section-title">Pluss Badges</h2>
+      <div style="display:flex;gap:var(--space-lg);flex-wrap:wrap;align-items:center;margin-bottom:var(--space-xl);background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);">
+        <div style="text-align:center;"><span class="badge badge--gold">Pluss</span><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Default</div></div>
+        <div style="text-align:center;"><span class="badge badge--gold badge--lg">★ Pluss</span><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Large</div></div>
+        <div style="text-align:center;"><span class="badge badge--gold-outline">Pluss</span><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Outline</div></div>
+        <div style="text-align:center;"><span class="lock-icon">🔒</span><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Lock</div></div>
+      </div>
+    </section>
+    <section class="section" id="mon-paywall">
+      <div class="section-eyebrow">Content Restriction</div>
+      <h2 class="section-title">Paywall Gate</h2>
+      <div style="max-width:560px;margin-bottom:var(--space-xl);"><div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);overflow:hidden;">
+        <div style="padding:var(--space-xl);"><div class="article-body" style="max-width:100%;"><p>Eesti majandusanalüütikud on täheldanud olulist muutust…</p><div class="content-blur-wrap"><p>Üksikasjalikud andmed näitavad, et 78% vastanutest on vähendanud kulutusi.</p><div class="content-blur-overlay"></div></div></div></div>
+        <div class="paywall-gate" style="border-radius:0;border-left:none;border-right:none;border-bottom:none;"><span class="paywall-gate-crown">★</span><div class="paywall-gate-title">Loe edasi Õhtuleht Plussis</div><div class="paywall-gate-body">Artikkel ainult tellijatele. Liitu Plussiga.</div><button class="paywall-gate-btn">★ Telli Pluss — alates 3.99€/kuus</button><div class="paywall-gate-sub">Juba tellija? <a href="#" style="color:var(--color-premium-badge);">Logi sisse</a></div></div>
+      </div></div>
+    </section>
+    <section class="section" id="mon-ads">
+      <div class="section-eyebrow">Advertising</div>
+      <h2 class="section-title">Ad Slot Rules</h2>
+      <div class="callout"><strong>IAB Standard:</strong> "Ad" label legally required. Never remove.</div>
+      <div class="ad-slots-grid">
+        <div class="ad-slot" style="height:90px;"><span class="ad-slot-label">Ad</span><div class="ad-slot-dims">728×90px</div><div class="ad-slot-name">Leaderboard</div></div>
+        <div class="ad-slot" style="height:250px;max-width:300px;"><span class="ad-slot-label">Ad</span><div class="ad-slot-dims">300×250px</div><div class="ad-slot-name">Medium Rectangle</div></div>
+        <div class="ad-slot" style="height:100px;"><span class="ad-slot-label">Ad</span><div class="ad-slot-dims">320×100px</div><div class="ad-slot-name">Mobile Banner</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ MEDIA ═══════════ -->
+    <section class="section" id="media-embeds">
+      <div class="section-eyebrow">Media Components</div>
+      <h2 class="section-title">Media &amp; Embeds</h2>
+      <h3 class="subsection-title">Video Player</h3>
+      <div style="max-width:560px;margin-bottom:var(--space-xl);"><div class="video-player"><div class="video-player-bg">Video thumbnail</div><div class="video-play-btn"><div class="video-play-icon"></div></div><div class="video-controls"><div class="video-progress"><div class="video-progress-fill"></div></div><div class="video-time">1:24 / 4:07</div></div></div></div>
+
+      <h3 class="subsection-title">Image Gallery</h3>
+      <div style="max-width:480px;margin-bottom:var(--space-xl);"><div class="gallery-grid"><div class="gallery-cell">Main</div><div class="gallery-cell">Img 2</div><div class="gallery-cell" style="position:relative;">Img 3<div class="gallery-more">+8</div></div></div><div class="article-caption">GALERII: Riigikogu istung. Fotod: Priit Mürk / ERR</div></div>
+
+      <h3 class="subsection-title">Social Embed (X)</h3>
+      <div class="social-embed"><div class="social-embed-header"><div class="avatar avatar--lg"></div><div><div class="social-embed-name">Riigikogu</div><div class="social-embed-handle">@Riigikogu</div></div><div class="social-embed-platform">𝕏</div></div><div class="social-embed-body">Täna kell 14:00 toimub täiskogu istung eelarve teise lugemisega.</div><div class="social-embed-footer">14. märts 2024 · 247 meeldimist</div></div>
+    </section>
+
+    <!-- ═══════════ THUMBNAIL BADGES & OVERLAYS ═══════════ -->
+    <section class="section chapter-header" id="thumb-badges">
+      <div class="section-eyebrow">Editorial Guidelines</div>
+      <h2 class="section-title">Thumbnail Badges &amp; Overlays</h2>
+      <p class="section-desc">Standardised media indicators positioned over article thumbnails — video play buttons, gallery icons, duration badges, and inline comment counts appended to headlines.</p>
+    </section>
+
+    <section class="section" id="tb-video">
+      <div class="section-eyebrow">Media Overlay</div>
+      <h2 class="section-title">Video &amp; Gallery Badges</h2>
+
+      <h3 class="subsection-title">Video Play Overlay</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Centred play button over the thumbnail. Semi-transparent dark circle (48×48px) with white triangle. Hover turns brand red.</p>
+      <div style="display:flex;gap:var(--space-xl);flex-wrap:wrap;margin-bottom:var(--space-xl);">
+        <div>
+          <div class="nav-state-label">Default</div>
+          <div class="tb-demo-card">
+            <div class="tb-demo-thumb">
+              Article thumbnail
+              <div class="tb-play"><div class="tb-play-icon"></div></div>
+              <div class="tb-duration">4:07</div>
+            </div>
+            <div class="tb-demo-body"><div class="tb-demo-headline">Riigikogu eelarvehääletus otseülekanne</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="nav-state-label">Gallery + Count Badge</div>
+          <div class="tb-demo-card">
+            <div class="tb-demo-thumb">
+              Article thumbnail
+              <div class="tb-gallery"><span class="tb-gallery-icon">📷</span> 12</div>
+            </div>
+            <div class="tb-demo-body"><div class="tb-demo-headline">GALERII: Riigikogu istungi hetked</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <strong>Video Play (.tb-play):</strong><br>
+        <span class="prop">position</span>: absolute, centered via <span class="val">top:50%; left:50%; transform:translate(-50%,-50%)</span><br>
+        <span class="prop">size</span>: <span class="val">48×48px</span>, border-radius 50%<br>
+        <span class="prop">background</span>: <span class="val">rgba(0,0,0,0.6)</span> → hover <span class="val">rgba(208,2,27,0.85)</span><br>
+        <span class="prop">box-shadow</span>: <span class="val">0 2px 8px rgba(0,0,0,0.3)</span><br><br>
+        <strong>Gallery Badge (.tb-gallery):</strong><br>
+        <span class="prop">position</span>: absolute, <span class="val">bottom: 8px; left: 8px</span><br>
+        <span class="prop">background</span>: <span class="val">rgba(0,0,0,0.65)</span>, white text, 10px bold<br>
+        <span class="prop">padding</span>: <span class="val">3px 8px</span>, radius <span class="val">--radius-sm</span><br><br>
+        <strong>Duration Badge (.tb-duration):</strong><br>
+        <span class="prop">position</span>: absolute, <span class="val">bottom: 8px; right: 8px</span><br>
+        <span class="prop">background</span>: <span class="val">rgba(0,0,0,0.7)</span>, monospace 10px
+      </div>
+
+      <h3 class="subsection-title">Badge Position Map</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Overlay zones are fixed to prevent visual collisions. No two badges share the same corner.</p>
+      <div style="max-width:300px;margin-bottom:var(--space-xl);">
+        <div class="tb-demo-card">
+          <div class="tb-demo-thumb" style="height:180px;">
+            <div class="tb-play" style="opacity:0.5;"><div class="tb-play-icon"></div></div>
+            <div class="tb-gallery" style="opacity:0.5;"><span class="tb-gallery-icon">📷</span> 12</div>
+            <div class="tb-duration" style="opacity:0.5;">4:07</div>
+            <div class="tb-pos-label" style="top:8px;left:8px;">↖ reserved</div>
+            <div class="tb-pos-label" style="top:8px;right:8px;">↗ reserved</div>
+            <div class="tb-pos-label" style="bottom:30px;left:50%;transform:translateX(-50%);">● center: play</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title" id="tb-comments">Inline Comment Counts</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Comment counts are appended inline at the end of headlines using red text in parentheses. They inherit the headline's <code>font-size</code> and are always bold + brand red.</p>
+
+      <div style="max-width:480px;background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div class="nc-cat">Poliitika</div>
+        <div class="nc-headline">Riigikogu kiitis heaks uue eelarvekava <span class="tb-comment-count">(127)</span></div>
+        <div class="nc-meta"><span>14. märts</span><span class="nc-meta-dot">3 min</span></div>
+        <div style="margin-top:var(--space-lg);padding-top:var(--space-md);border-top:1px solid var(--color-rule);">
+          <div class="nc-headline-sm">Eesti korvpallikoondis alistas Lätit <span class="tb-comment-count">(34)</span></div>
+          <div class="nc-meta"><span>2h tagasi</span></div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <span class="prop">.tb-comment-count</span>: inherits <span class="val">font-size</span>, font-weight <span class="val">bold</span>, color <span class="val">--color-brand-red</span>, margin-left 4px<br>
+        <strong>Usage:</strong> <code>&lt;span class="tb-comment-count"&gt;(127)&lt;/span&gt;</code> — always include parentheses in the text content.
+      </div>
+    </section>
+
+    <!-- ═══════════ LIVE COVERAGE ═══════════ -->
+    <section class="section chapter-header" id="live-coverage">
+      <div class="section-eyebrow">Phase 3 — Live &amp; Personalisation</div>
+      <h2 class="section-title">Live Coverage</h2>
+      <p class="section-desc">Real-time reporting — live blog, homepage widget, timeline, key events. All variants share the unified <code>.lc</code> system.</p>
+    </section>
+    <section class="section" id="lc-blog">
+      <div class="section-eyebrow">Live Component</div>
+      <h2 class="section-title">Live Blog</h2>
+      <div style="max-width:560px;margin-bottom:var(--space-xl);"><div class="lc lc--blog"><div class="lc-header"><span class="live-dot"></span><span class="lc-title">OTSEBLOGI: Riigikogu eelarvehääletus</span><span class="lc-count">47 uuendust</span></div>
+        <div class="lc-entry is-latest"><div class="lc-time is-latest">14:32<br><span style="font-size:9px;">UUSIM</span></div><div><div class="lc-entry-title">Tulemus: 56 poolt, 34 vastu</div><div class="lc-entry-body">Eelnõu läbis teise lugemise edukalt.</div></div></div>
+        <div class="lc-entry"><div class="lc-time">14:15</div><div><div class="lc-entry-title">Arutelu jätkub</div><div class="lc-entry-body">Opositsioon esitas muudatusettepaneku.</div></div></div>
+        <div class="lc-entry"><div class="lc-time">13:47</div><div><div class="lc-entry-title">Istung avati</div><div class="lc-entry-body">Päevakorras on kaks tähtsat eelnõu.</div></div></div>
+      </div></div>
+    </section>
+    <section class="section" id="lc-widget">
+      <div class="section-eyebrow">Live Component</div>
+      <h2 class="section-title">Homepage Live Widget</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div><div class="nav-state-label">Active Coverage</div><div class="lc lc--widget" style="max-width:320px;"><div class="lc-header"><span class="badge badge--live"><span class="live-dot"></span>LIVE</span><span class="lc-title">Eelarvehääletus</span><span class="lc-count">51</span></div><div class="lc-entry is-latest"><div class="lc-time is-latest">14:32<br><span style="font-size:9px;">UUSIM</span></div><div class="lc-entry-title is-latest">Tulemus: 56 poolt, 34 vastu</div></div><div class="lc-entry"><div class="lc-time">14:15</div><div class="lc-entry-title">Opositsiooni muudatusettepanek</div></div><div class="lc-entry"><div class="lc-time">13:47</div><div class="lc-entry-title">Istung avati planeeritult</div></div><div class="lc-footer"><span style="font-size:var(--text-xs);color:var(--color-ink-40);">Uueneb 30s</span><a href="#">Vaata otseblogi →</a></div></div></div>
+        <div><div class="nav-state-label">Coverage Ended</div><div class="lc lc--widget" style="max-width:320px;border-top-color:var(--color-ink-20);"><div class="lc-header" style="background:var(--color-surface-white);"><span style="display:inline-flex;align-items:center;gap:5px;background:var(--color-ink-40);color:white;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.12em;padding:3px 8px;border-radius:2px;">LÕPPENUD</span><span class="lc-title">Pressikonverents</span></div><div class="lc-entry" style="opacity:0.7;"><div class="lc-time">16:05</div><div class="lc-entry-title">Pressikonverents lõppes</div></div><div class="lc-footer"><span style="font-size:var(--text-xs);color:var(--color-ink-40);">Lõpetatud 16:05</span><a href="#">Loe kokkuvõtet →</a></div></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="lc-timeline">
+      <div class="section-eyebrow">Live Component</div>
+      <h2 class="section-title">Article Timeline</h2>
+      <div style="max-width:580px;margin-bottom:var(--space-xl);"><div class="timeline">
+        <div class="tl-entry is-latest"><div class="tl-dot"></div><div class="tl-timestamp relative-time"><span>14:32</span><span class="tl-timestamp-sep">·</span><span style="font-style:italic;font-weight:400;color:var(--color-ink-40);">2 min tagasi</span></div><div class="tl-body"><div class="lc-entry-title">Hääletuse tulemus: 56 poolt, 34 vastu</div><div class="lc-entry-body">Riigikogu kinnitas teise lugemise.</div><div class="tl-author"><div class="avatar avatar--xs"></div><div><div class="tl-author-name">Mari Tamm</div><div class="tl-author-role">Korrespondent</div></div></div></div></div>
+        <div class="tl-entry is-key"><div class="tl-dot"></div><div class="tl-timestamp"><span>14:15</span><span class="tl-timestamp-sep">·</span><span style="font-size:9px;background:var(--color-live-red);color:white;padding:1px 5px;border-radius:2px;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">Võtmesündmus</span></div><div class="tl-body"><div class="lc-entry-title">Opositsioon esitas muudatusettepaneku</div><div class="lc-entry-body">Ettepanekut toetas 34 saadikut — lükati tagasi.</div></div></div>
+        <div class="tl-entry"><div class="tl-dot"></div><div class="tl-timestamp"><span>13:47</span></div><div class="tl-body"><div class="lc-entry-title">Istung avati</div><div class="lc-entry-body">Päevakorras kaks eelnõu.</div></div></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="lc-keyevents">
+      <div class="section-eyebrow">Live Component</div>
+      <h2 class="section-title">Key Events Summary</h2>
+      <div style="max-width:540px;margin-bottom:var(--space-xl);"><div class="lc lc--key-events"><div class="lc-header"><span>★</span> Võtmesündmused</div><div class="lc-entry"><div class="lc-time">14:32</div><div class="lc-entry-title">Tulemus: 56 poolt, 34 vastu — eelnõu läbis</div></div><div class="lc-entry"><div class="lc-time">14:15</div><div class="lc-entry-title">Opositsioon esitas muudatusettepaneku</div></div><div class="lc-entry"><div class="lc-time">13:47</div><div class="lc-entry-title">Istung avati planeeritult</div></div></div></div>
+    </section>
+
+    <!-- ═══════════ UTILITIES ═══════════ -->
+    <section class="section chapter-header" id="utilities-engagement">
+      <div class="section-eyebrow">Phase 3</div>
+      <h2 class="section-title">Utilities &amp; Engagement</h2>
+      <p class="section-desc">Bylines, widgets, comments, newsletter CTAs.</p>
+    </section>
+    <section class="section" id="ue-bylines">
+      <div class="section-eyebrow">Author Attribution</div>
+      <h2 class="section-title">Author Bylines</h2>
+      <h3 class="subsection-title">Compact Byline</h3>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);max-width:600px;">
+        <div class="byline-compact"><div class="avatar avatar--sm"></div><div><a href="#" style="font-size:var(--text-sm);font-weight:var(--weight-semibold);color:var(--color-ink-80);">Mari Tamm</a></div><span class="byline-sep">·</span><span class="byline-date">14. märts 2024</span><span class="byline-sep">·</span><span class="byline-read-time">⏱ 5 min</span></div>
+      </div>
+      <h3 class="subsection-title">Full Author Profile</h3>
+      <div style="max-width:600px;margin-bottom:var(--space-xl);"><div class="author-profile"><div class="avatar avatar--xl">MT</div><div class="author-info"><div class="author-name">Mari Tamm</div><div class="author-title">Parlamendikorrespondent</div><div class="author-bio">Õhtulehe parlamendikorrespondent alates 2018. Tunnustatud parima poliitilise reportaaži auhinnaga 2022.</div><div class="author-social"><a href="#" class="author-social-link">𝕏 @maritamm</a><a href="#" class="author-social-link">✉ Kirjuta</a><a href="#" class="author-social-link">📰 Artiklid</a></div><div class="author-stat">247 artiklit · Liitunud 2018</div></div></div></div>
+    </section>
+
+    <section class="section" id="ue-widgets">
+      <div class="section-eyebrow">Utility Widgets</div>
+      <h2 class="section-title">Weather &amp; Markets</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);margin-bottom:var(--space-xl);align-items:start;">
+        <div><div class="nav-state-label">Weather Widget</div><div class="widget-card"><div class="widget-header"><div class="widget-title">Ilm</div><a class="widget-link" href="#">ilm.ee →</a></div><div class="weather-main"><div class="weather-icon">⛅</div><div><div style="display:flex;align-items:baseline;gap:2px;"><div class="weather-temp">+4</div><div class="weather-unit">°C</div></div><div class="weather-desc">Muutlik pilvisus</div><div class="weather-location">Tallinn</div></div></div><div class="weather-forecast"><div class="weather-day"><div class="weather-day-label">K</div><div class="weather-day-icon">🌧</div><div class="weather-day-temp">+3</div></div><div class="weather-day"><div class="weather-day-label">N</div><div class="weather-day-icon">⛅</div><div class="weather-day-temp">+5</div></div><div class="weather-day"><div class="weather-day-label">R</div><div class="weather-day-icon">☀</div><div class="weather-day-temp">+8</div></div><div class="weather-day"><div class="weather-day-label">L</div><div class="weather-day-icon">🌦</div><div class="weather-day-temp">+6</div></div><div class="weather-day"><div class="weather-day-label">P</div><div class="weather-day-icon">☀</div><div class="weather-day-temp">+9</div></div></div></div></div>
+        <div><div class="nav-state-label">Market Ticker</div><div class="widget-card"><div class="widget-header"><div class="widget-title">Turud</div></div><div class="market-row"><div class="market-name">EUR/USD</div><div class="market-value">1.0842</div><div class="market-change market-up">+0.12%</div><svg class="market-sparkline" viewBox="0 0 48 24" fill="none"><polyline points="0,18 8,14 16,16 24,10 32,12 40,8 48,6" stroke="#1A6E45" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="market-row"><div class="market-name">OMX Tallinn</div><div class="market-value">1 847.2</div><div class="market-change market-down">−0.34%</div><svg class="market-sparkline" viewBox="0 0 48 24" fill="none"><polyline points="0,8 8,10 16,9 24,14 32,13 40,16 48,18" stroke="#C0392B" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="market-row"><div class="market-name">Gold</div><div class="market-value">$2 161</div><div class="market-change market-up">+0.41%</div><svg class="market-sparkline" viewBox="0 0 48 24" fill="none"><polyline points="0,14 8,12 16,10 24,9 32,8 40,7 48,5" stroke="#1A6E45" stroke-width="1.5" stroke-linecap="round"/></svg></div></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="ue-engagement">
+      <div class="section-eyebrow">Engagement</div>
+      <h2 class="section-title">Comments &amp; Read Next</h2>
+      <h3 class="subsection-title">Read Next Grid</h3>
+      <div style="max-width:640px;margin-bottom:var(--space-2xl);"><div class="read-next"><div class="read-next-label">Loe edasi</div><div class="read-next-grid"><div class="nc nc--read-next"><div class="nc-thumb">Img</div><div class="nc-cat">Sport</div><div class="nc-headline-sm">Koondis alistas Lätit 3:1</div></div><div class="nc nc--read-next"><div class="nc-thumb">Img</div><div class="nc-cat">Majandus</div><div class="nc-headline-sm">Eksport kasvas 12%</div></div><div class="nc nc--read-next"><div class="nc-thumb">Img</div><div class="nc-cat">Kultuur</div><div class="nc-headline-sm">Festivalid müüdud välja</div></div></div></div></div>
+
+      <h3 class="subsection-title">Comment Section</h3>
+      <div style="max-width:560px;margin-bottom:var(--space-xl);"><div class="comment-section">
+        <div class="comment-section-header"><div class="comment-count">127 kommentaari</div><button class="comment-sort-btn">Uusimad ▾</button></div>
+        <div class="comment"><div class="comment-meta"><div class="avatar avatar--md"></div><span class="comment-username">KallasKaarel</span><span class="badge badge--navy">Modereeritud</span><span class="comment-date">14:45</span></div><div class="comment-body">Huvitav tulemus — ootan kolmandat lugemist.</div><div class="comment-actions"><button class="comment-action-btn comment-vote-up active">▲ 34</button><button class="comment-action-btn comment-vote-down">▼ 2</button><button class="comment-action-btn">💬 Vasta</button></div>
+          <div class="comment-reply-thread"><div class="comment"><div class="comment-meta"><div class="avatar avatar--md" style="width:26px;height:26px;"></div><span class="comment-username">TammeTarmo</span><span class="comment-date">15:02</span></div><div class="comment-body">Nõustun. Vaatame 21. märtsil.</div><div class="comment-actions"><button class="comment-action-btn comment-vote-up">▲ 8</button><button class="comment-action-btn comment-vote-down">▼ 0</button></div></div></div>
+        </div>
+      </div></div>
+
+      <h3 class="subsection-title">Newsletter CTA</h3>
+      <div style="max-width:600px;"><div class="newsletter-inline"><div class="newsletter-icon">📬</div><div class="newsletter-text"><div class="newsletter-title">Õhtuleht Päevakiri</div><div class="newsletter-desc">Päeva olulisimad uudised otse e-posti. Tasuta, iga päev.</div></div><div class="newsletter-form"><input class="newsletter-input" type="email" placeholder="sinu@email.ee"><button class="newsletter-btn">Telli</button></div></div></div>
+    </section>
+
+    <!-- ═══════════ SIDEBAR WIDGETS ═══════════ -->
+    <section class="section chapter-header" id="sidebar-widgets">
+      <div class="section-eyebrow">Phase 3 — Utilities</div>
+      <h2 class="section-title">Sidebar &amp; Tabbed Widgets</h2>
+      <p class="section-desc">Sidebar components used in the right rail on article and section pages — tabbed content lists, content marketing blocks, and compact trending feeds.</p>
+    </section>
+
+    <section class="section" id="sw-tabbed">
+      <div class="section-eyebrow">Sidebar Component</div>
+      <h2 class="section-title">Tabbed Content List</h2>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">The "Viimased / Loetuimad" widget uses a two-tab header with an active underline indicator. Tab states toggle between chronological and popularity-sorted lists.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);margin-bottom:var(--space-xl);align-items:start;">
+        <div>
+          <div class="nav-state-label">Tab 1 Active — Viimased (Latest)</div>
+          <div class="tw-widget">
+            <div class="tw-tab-row">
+              <button class="tw-tab is-active">Viimased</button>
+              <button class="tw-tab">Loetuimad</button>
+            </div>
+            <ul class="tw-list">
+              <li class="tw-item"><span class="tw-item-num">1</span><div><div class="tw-item-title">Riigikogu kiitis heaks eelarvekava</div><div class="tw-item-meta">14:32 · Poliitika</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">2</span><div><div class="tw-item-title">Eesti koondis alistas Lätit 3:1</div><div class="tw-item-meta">13:05 · Sport</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">3</span><div><div class="tw-item-title">Festivalid müüdud välja 20 minutiga</div><div class="tw-item-meta">12:18 · Kultuur</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">4</span><div><div class="tw-item-title">Transpordiamet hoiatab tuisu eest</div><div class="tw-item-meta">11:45 · Eesti</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">5</span><div><div class="tw-item-title">Eksport kasvas veebruaris 12%</div><div class="tw-item-meta">10:30 · Majandus</div></div></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="nav-state-label">Tab 2 Active — Loetuimad (Most Read)</div>
+          <div class="tw-widget">
+            <div class="tw-tab-row">
+              <button class="tw-tab">Viimased</button>
+              <button class="tw-tab is-active">Loetuimad</button>
+            </div>
+            <ul class="tw-list">
+              <li class="tw-item"><span class="tw-item-num">1</span><div><div class="tw-item-title">Eesti koondis alistas Lätit 3:1</div><div class="tw-item-meta">4 271 vaatamist</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">2</span><div><div class="tw-item-title">Riigikogu kiitis heaks eelarvekava</div><div class="tw-item-meta">3 842 vaatamist</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">3</span><div><div class="tw-item-title">Festivalid müüdud välja 20 minutiga</div><div class="tw-item-meta">2 106 vaatamist</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">4</span><div><div class="tw-item-title">Peaminister teeb avalduse kell 15</div><div class="tw-item-meta">1 993 vaatamist</div></div></li>
+              <li class="tw-item"><span class="tw-item-num">5</span><div><div class="tw-item-title">Eksport kasvas veebruaris 12%</div><div class="tw-item-meta">1 447 vaatamist</div></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <strong>Tab Row (.tw-tab-row):</strong> flex, bg <span class="val">--color-surface-paper</span>, border-bottom 1px <span class="val">--color-rule</span><br>
+        <span class="prop">.tw-tab</span>: 12px semibold uppercase, color <span class="val">--color-ink-40</span>, border-bottom 2px transparent<br>
+        <span class="prop">.tw-tab.is-active</span>: color <span class="val">--color-brand-red</span>, border-bottom-color <span class="val">--color-brand-red</span>, bg <span class="val">--color-surface-white</span><br><br>
+        <strong>List Item (.tw-item):</strong> flex, gap 8px, padding 10px 16px, border-bottom 1px <span class="val">--color-rule</span>, hover bg <span class="val">--color-surface-paper</span><br>
+        <span class="prop">.tw-item-num</span>: serif <span class="val">--text-lg</span>, black weight, <span class="val">--color-brand-red</span>, opacity 0.6<br>
+        <span class="prop">.tw-item-title</span>: sans <span class="val">--text-sm</span>, medium weight, <span class="val">--color-ink</span>
+      </div>
+
+      <h3 class="subsection-title" id="sw-sisuturundus">Content Marketing (SISUTURUNDUS)</h3>
+      <p style="font-size:var(--text-sm);color:var(--color-ink-60);margin-bottom:var(--space-lg);">Sponsored content blocks must be visually distinct from editorial. The warm background and uppercase "SISUTURUNDUS" label ensure clear separation per ASA guidelines. These blocks appear in the sidebar rail.</p>
+
+      <div style="max-width:340px;margin-bottom:var(--space-xl);">
+        <div class="tw-cm">
+          <div class="tw-cm-header"><div class="tw-cm-label">SISUTURUNDUS</div></div>
+          <div class="tw-cm-item"><div class="tw-cm-thumb">Img</div><div class="tw-cm-title">Kuidas valida õiget kindlustuspaketti oma perele</div></div>
+          <div class="tw-cm-item"><div class="tw-cm-thumb">Img</div><div class="tw-cm-title">Uus elektriauto test: 500km ühe laadimisega</div></div>
+          <div class="tw-cm-item"><div class="tw-cm-thumb">Img</div><div class="tw-cm-title">Tervisliku toitumise 5 lihtsat reeglit</div></div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <span class="prop">.tw-cm</span>: bg <span class="val">--color-surface-paper</span>, border 1px <span class="val">--color-rule</span>, radius <span class="val">--radius-lg</span><br>
+        <span class="prop">.tw-cm-header</span>: bg <span class="val">--color-surface-warm</span>, border-bottom 1px <span class="val">--color-rule</span>, padding 8px 16px<br>
+        <span class="prop">.tw-cm-label</span>: 9px bold uppercase, letter-spacing 0.12em, <span class="val">--color-ink-40</span><br>
+        <span class="prop">.tw-cm-thumb</span>: 64×48px, radius <span class="val">--radius-sm</span>, gradient placeholder<br>
+        <strong>Important:</strong> The "SISUTURUNDUS" label is legally required and must not be removed or obscured.
+      </div>
+    </section>
+
+    <!-- ═══════════ NAV STATES ═══════════ -->
+    <section class="section chapter-header" id="user-nav">
+      <div class="section-eyebrow">Phase 3</div>
+      <h2 class="section-title">Navigation States</h2>
+      <p class="section-desc">Anonymous vs. authenticated navigation, user dropdown menus.</p>
+    </section>
+    <section class="section" id="un-states">
+      <div class="section-eyebrow">Navigation</div>
+      <h2 class="section-title">Logged Out vs. Logged In</h2>
+      <div class="nav-comparison">
+        <div><div class="nav-state-label">Anonymous (Logged Out)</div><div class="mock-nav"><div class="mock-nav-logo">Õhtuleht<span>.</span></div><div class="mock-nav-spacer"></div><div class="mock-nav-search">🔍 Otsi…</div><button class="mock-nav-btn mock-nav-login">Logi sisse</button><button class="mock-nav-btn mock-nav-subscribe">Telli Pluss</button></div></div>
+        <div><div class="nav-state-label">Pluss Subscriber</div><div class="mock-nav"><div class="mock-nav-logo">Õhtuleht<span>.</span></div><div class="mock-nav-spacer"></div><div class="mock-nav-search">🔍 Otsi…</div><div style="color:#888;font-size:18px;cursor:pointer;">🔖</div><div class="mock-nav-user"><div style="position:relative;"><div class="avatar avatar--sm avatar--brand">MT</div><div style="position:absolute;bottom:-3px;right:-3px;width:13px;height:13px;background:var(--color-premium-gold);border-radius:50%;font-size:7px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--color-black);color:white;">★</div></div><span class="nav-username">MariT</span><span class="nav-chevron">▾</span></div></div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div><div class="nav-state-label">Free User Dropdown</div><div class="user-dropdown"><div class="user-dropdown-header"><div class="avatar avatar--lg avatar--brand">KK</div><div><div class="dropdown-user-name">KallasKaarel</div><div class="dropdown-user-plan free">Tasuta kasutaja</div></div></div><div class="plan-strip free"><span>Telli Pluss — alates 3.99€/kuus →</span></div><div class="dropdown-item"><span class="dropdown-item-icon">👤</span> Minu profiil</div><div class="dropdown-item"><span class="dropdown-item-icon">🔖</span> Salvestatud</div><div class="dropdown-item"><span class="dropdown-item-icon">⚙</span> Seaded</div><div class="dropdown-sep"></div><div class="dropdown-item danger"><span class="dropdown-item-icon">→</span> Logi välja</div></div></div>
+        <div><div class="nav-state-label">Pluss Dropdown</div><div class="user-dropdown"><div class="user-dropdown-header"><div class="avatar avatar--lg avatar--premium" style="background:linear-gradient(135deg,var(--color-premium-gold),var(--color-brand-red-dark));">MT</div><div><div class="dropdown-user-name">MariTamm</div><div class="dropdown-user-plan">★ Pluss tellija</div></div></div><div class="plan-strip pluss"><span>★ Pluss — aegub 14. apr 2024</span></div><div class="dropdown-item premium-item"><span class="dropdown-item-icon">★</span> Pluss artiklid</div><div class="dropdown-item"><span class="dropdown-item-icon">🔖</span> Salvestatud</div><div class="dropdown-item"><span class="dropdown-item-icon">💳</span> Tellimuse haldus</div><div class="dropdown-item"><span class="dropdown-item-icon">⚙</span> Seaded</div><div class="dropdown-sep"></div><div class="dropdown-item danger"><span class="dropdown-item-icon">→</span> Logi välja</div></div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PERSONALISATION ═══════════ -->
+    <section class="section chapter-header" id="personalisation">
+      <div class="section-eyebrow">Phase 3</div>
+      <h2 class="section-title">Saved &amp; Personalised</h2>
+      <p class="section-desc">Bookmarks, read later, topic following, My News feed.</p>
+    </section>
+    <section class="section" id="pers-bookmark">
+      <div class="section-eyebrow">Interaction States</div>
+      <h2 class="section-title">Bookmark States</h2>
+      <div style="display:flex;gap:var(--space-2xl);flex-wrap:wrap;background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div style="text-align:center;"><button class="bookmark-btn" style="pointer-events:none;"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button><div style="font-size:var(--text-xs);color:var(--color-ink-40);margin-top:var(--space-sm);font-weight:600;">Default</div></div>
+        <div style="text-align:center;"><button class="bookmark-btn" style="pointer-events:none;border-color:var(--color-bookmark-fill);"><svg viewBox="0 0 24 24" style="stroke:var(--color-bookmark-fill);"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button><div style="font-size:var(--text-xs);color:var(--color-ink-40);margin-top:var(--space-sm);font-weight:600;">Hover</div></div>
+        <div style="text-align:center;"><button class="bookmark-btn active" style="pointer-events:none;"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button><div style="font-size:var(--text-xs);color:var(--color-bookmark-fill);margin-top:var(--space-sm);font-weight:700;">Saved ✓</div></div>
+        <div style="text-align:center;"><button class="bookmark-btn" style="pointer-events:none;opacity:0.5;"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button><div style="font-size:var(--text-xs);color:var(--color-ink-40);margin-top:var(--space-sm);font-weight:600;">Anonymous</div></div>
+      </div>
+      <h3 class="subsection-title">Read Later — Empty State</h3>
+      <div style="max-width:480px;margin-bottom:var(--space-xl);"><div class="empty-state"><span class="empty-state-icon">🔖</span><div class="empty-state-title">Salvestatud artikleid pole</div><div class="empty-state-desc">Salvesta artiklid ja loe hiljem. Säilivad 30 päeva.</div><a href="#" class="empty-state-cta">→ Sirvi uudiseid</a></div></div>
+    </section>
+
+    <section class="section" id="pers-topics">
+      <div class="section-eyebrow">Personalisation</div>
+      <h2 class="section-title">Topic Following</h2>
+      <div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-xl);">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);margin-bottom:var(--space-lg);">
+          <div style="text-align:center;"><div class="topic-pill" style="pointer-events:none;display:inline-flex;"><span class="topic-pill-icon">📰</span> Uudised</div><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Default</div></div>
+          <div style="text-align:center;"><div class="topic-pill" style="pointer-events:none;display:inline-flex;border-color:var(--color-brand-red);color:var(--color-brand-red);background:var(--color-brand-red-light);"><span class="topic-pill-icon">⚽</span> Sport</div><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Hover</div></div>
+          <div style="text-align:center;"><div class="topic-pill following" style="pointer-events:none;display:inline-flex;"><span>✓</span> Poliitika</div><div style="font-size:10px;color:var(--color-ink-40);margin-top:6px;">Following</div></div>
+        </div>
+        <div style="font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-ink-40);margin-bottom:var(--space-md);">Interactive Demo — Click to Toggle</div>
+        <div class="topic-grid" id="topicGrid">
+          <div class="topic-pill following" onclick="toggleTopic(this)"><span>✓</span> Poliitika</div>
+          <div class="topic-pill following" onclick="toggleTopic(this)"><span>✓</span> Sport</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">📈</span> Majandus</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">🎭</span> Kultuur</div>
+          <div class="topic-pill following" onclick="toggleTopic(this)"><span>✓</span> Elustiil</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">🌍</span> Välismaa</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">🔬</span> Teadus</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">🏠</span> Kinnisvara</div>
+          <div class="topic-pill" onclick="toggleTopic(this)"><span class="topic-pill-icon">💊</span> Tervis</div>
+        </div>
+        <div id="topic-counter" style="font-size:var(--text-xs);color:var(--color-ink-40);margin-top:var(--space-sm);">3 / 20 teemat valitud</div>
+      </div>
+
+      <h3 class="subsection-title">My News Feed</h3>
+      <div style="max-width:640px;background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xl);">
+        <div class="mynews-header"><div class="mynews-title">Minu uudised</div><button class="mynews-edit-btn">✎ Muuda teemasid</button></div>
+        <div class="mynews-section-header"><span class="mynews-section-icon">⚽</span> Sport · 4 uut</div>
+        <div class="nc-list" style="margin-bottom:var(--space-lg);"><div class="nc nc--compact"><div class="nc-compact-thumb">Img</div><div class="nc-compact-body"><div class="nc-cat" style="font-size:10px;">Sport</div><div class="nc-headline-sm">Koondis alistas Lätit 3:1</div><div class="nc-meta"><span>2h tagasi</span></div></div></div></div>
+        <div class="mynews-section-header"><span class="mynews-section-icon">🏛</span> Poliitika · 7 uut</div>
+        <div class="nc-list"><div class="nc nc--compact"><div class="nc-compact-thumb">Img</div><div class="nc-compact-body"><div class="nc-cat" style="font-size:10px;">Poliitika</div><div class="nc-headline-sm">Eelarve tulemus: 56:34</div><div class="nc-meta"><span>30 min</span><span class="badge badge--gold" style="font-size:8px;padding:1px 5px;margin-left:4px;">Pluss</span></div></div></div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ READING PREFS ═══════════ -->
+    <section class="section chapter-header" id="reading-prefs">
+      <div class="section-eyebrow">Phase 3</div>
+      <h2 class="section-title">Reading Preferences</h2>
+      <p class="section-desc">Font size controls, theme switching, dark mode tokens. <span class="draft-badge">DRAFT/PROPOSED</span></p>
+    </section>
+    <section class="section" id="rp-darkmode">
+      <div class="section-eyebrow">Reading Preferences</div>
+      <h2 class="section-title">Font Size &amp; Dark Mode</h2>
+
+      <h3 class="subsection-title">Font Size Control</h3>
+      <div style="display:flex;align-items:center;gap:var(--space-lg);margin-bottom:var(--space-2xl);">
+        <div class="font-size-control"><button class="fsc-btn" id="fsc-minus" onclick="changeFontSize(-1)">A−</button><div class="fsc-label" id="fsc-value">Md 18px</div><button class="fsc-btn" id="fsc-plus" onclick="changeFontSize(1)">A+</button></div>
+        <div id="font-size-preview" style="font-size:18px;font-family:var(--font-sans);color:var(--color-ink);transition:font-size 0.2s;">Preview text size</div>
+      </div>
+
+      <h3 class="subsection-title">Toggle Switch</h3>
+      <div style="display:flex;gap:var(--space-xl);margin-bottom:var(--space-2xl);">
+        <div class="toggle-wrap" onclick="toggleSwitch(this.querySelector('.toggle-track'))"><div class="toggle-track"><div class="toggle-thumb"></div></div><div><div class="toggle-label">Dark Mode</div><div class="toggle-sublabel">Adjust reading theme</div></div></div>
+        <div class="toggle-wrap" onclick="toggleSwitch(this.querySelector('.toggle-track'))"><div class="toggle-track on"><div class="toggle-thumb"></div></div><div><div class="toggle-label">Serif body text</div><div class="toggle-sublabel">Use serif for articles</div></div></div>
+      </div>
+
+      <h3 class="subsection-title">Dark Mode Preview <span class="draft-badge">DRAFT/PROPOSED</span></h3>
+      <div class="mode-comparison">
+        <div><div class="nav-state-label">Light Mode (Default)</div><div style="background:var(--color-surface-white);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-lg);"><div class="nc-cat">Poliitika</div><div class="nc-headline">Riigikogu kiitis heaks eelarvekava</div><div class="nc-meta"><span>14. märts</span><span class="nc-meta-dot">4 min</span></div></div></div>
+        <div><div class="nav-state-label">Dark Mode [DRAFT/PROPOSED]</div><div class="dm-preview"><div class="dm-topbar"><div class="dm-logo">Õhtuleht<span>.</span></div></div><div class="dm-body"><div class="dm-card"><div class="dm-cat">Poliitika</div><div class="dm-headline">Riigikogu kiitis heaks eelarvekava</div><div class="dm-meta">14. märts · 4 min</div></div></div></div></div>
+      </div>
+
+      <h3 class="subsection-title">Dark Mode Token Mapping</h3>
+      <div class="dm-preview" style="padding:var(--space-lg);"><table class="dm-token-table"><tbody>
+        <tr><td class="tk">--dm-surface-base</td><td class="val">#0F0F0F</td><td><span class="swatch" style="background:#0F0F0F;"></span></td></tr>
+        <tr><td class="tk">--dm-surface-raised</td><td class="val">#1A1A1A</td><td><span class="swatch" style="background:#1A1A1A;"></span></td></tr>
+        <tr><td class="tk">--dm-surface-border</td><td class="val">#2E2E2E</td><td><span class="swatch" style="background:#2E2E2E;"></span></td></tr>
+        <tr><td class="tk">--dm-text-primary</td><td class="val">#F0F0F0</td><td><span class="swatch" style="background:#F0F0F0;"></span></td></tr>
+        <tr><td class="tk">--dm-text-secondary</td><td class="val">#A0A0A0</td><td><span class="swatch" style="background:#A0A0A0;"></span></td></tr>
+        <tr><td class="tk">--dm-brand-red</td><td class="val">#E8283A</td><td><span class="swatch" style="background:#E8283A;"></span></td></tr>
+      </tbody></table></div>
+    </section>
+
+  </main><!-- /main -->
+</div><!-- /layout -->
+
+<!-- Toast -->
+<div id="toast"><span id="toast-icon">✓</span> <span id="toast-msg"></span></div>
+
+<!-- JavaScript -->
+<script src="js/app.js"></script>
+</body>
+</html>

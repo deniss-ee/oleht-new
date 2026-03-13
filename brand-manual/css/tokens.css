@@ -1,0 +1,232 @@
+/* ═══════════════════════════════════════════════════════
+   ÕHTULEHT DESIGN TOKENS
+   Single source of truth for all design decisions.
+   Import this file first in any stylesheet.
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  /* ═══════════════════════════════════════════════════
+     PRIMARY (RED) SCALE  —  10 steps
+     Base: #D0021B at step 600
+     ═══════════════════════════════════════════════════ */
+  --color-primary-50:   #FEF2F2;
+  --color-primary-100:  #FDE3E5;
+  --color-primary-200:  #FACCD0;
+  --color-primary-300:  #F5969E;
+  --color-primary-400:  #EE5462;
+  --color-primary-500:  #E3162D;
+  --color-primary-600:  #D0021B; /* ← Production Brand Red */
+  --color-primary-700:  #A50015;
+  --color-primary-800:  #8B0316;
+  --color-primary-900:  #760618;
+
+  /* ═══════════════════════════════════════════════════
+     NEUTRAL (GRAY) SCALE  —  10 steps
+     Base: #0D0D0D at step 900
+     ═══════════════════════════════════════════════════ */
+  --color-neutral-50:   #FAFAF8;
+  --color-neutral-100:  #F7F4F0;
+  --color-neutral-200:  #E8E8E4;
+  --color-neutral-300:  #E0E0E0;
+  --color-neutral-400:  #CCCCCC;
+  --color-neutral-500:  #999999;
+  --color-neutral-600:  #666666;
+  --color-neutral-700:  #333333;
+  --color-neutral-800:  #1A1A1A;
+  --color-neutral-900:  #0D0D0D; /* ← Production Brand Black */
+
+  /* ═══════════════════════════════════════════════════
+     SECONDARY (YELLOW) SCALE  —  10 steps
+     Base: #F6C90E at step 400
+     ═══════════════════════════════════════════════════ */
+  --color-secondary-50:   #FFFEF0;
+  --color-secondary-100:  #FFFBD1;
+  --color-secondary-200:  #FFF5A3;
+  --color-secondary-300:  #FCEB6B;
+  --color-secondary-400:  #F6C90E; /* ← Production Feature Yellow */
+  --color-secondary-500:  #E6B308;
+  --color-secondary-600:  #C68D04;
+  --color-secondary-700:  #9E6807;
+  --color-secondary-800:  #82520E;
+  --color-secondary-900:  #6F4312;
+
+  /* ═══════════════════════════════════════════════════
+     PLUSS (GOLD) SCALE  —  10 steps
+     Base: #C9910A at step 500
+     ═══════════════════════════════════════════════════ */
+  --color-pluss-50:   #FDF8EC;
+  --color-pluss-100:  #FAEECC;
+  --color-pluss-200:  #F4DC96;
+  --color-pluss-300:  #E8C96A;
+  --color-pluss-400:  #DAAF2D;
+  --color-pluss-500:  #C9910A; /* ← Production Premium Gold */
+  --color-pluss-600:  #B8860B;
+  --color-pluss-700:  #946406;
+  --color-pluss-800:  #7A500C;
+  --color-pluss-900:  #684210;
+
+  /* ═══════════════════════════════════════════════════
+     PAPERY (WARM CREAM) SCALE  —  10 steps
+     Base: #F7F4F0 at step 50
+     ═══════════════════════════════════════════════════ */
+  --color-papery-50:   #F7F4F0; /* ← Base warm cream */
+  --color-papery-100:  #EFEBE4;
+  --color-papery-200:  #E3DDD3;
+  --color-papery-300:  #D5CCC0;
+  --color-papery-400:  #BFB4A5;
+  --color-papery-500:  #A69A89;
+  --color-papery-600:  #8D806F;
+  --color-papery-700:  #736758;
+  --color-papery-800:  #5C5145;
+  --color-papery-900:  #474036;
+
+  /* ═══════════════════════════════════════════════════
+     LEGACY ALIASES — map old tokens → new scale
+     Keep these for backward compatibility.
+     ═══════════════════════════════════════════════════ */
+  --color-brand-red:        var(--color-primary-600);
+  --color-brand-red-dark:   var(--color-primary-700);
+  --color-brand-red-light:  var(--color-primary-100);
+
+  --color-black:            var(--color-neutral-900);
+  --color-ink:              var(--color-neutral-800);
+  --color-ink-80:           var(--color-neutral-700);
+  --color-ink-60:           var(--color-neutral-600);
+  --color-ink-40:           var(--color-neutral-500);
+  --color-ink-20:           var(--color-neutral-400);
+  --color-rule:             var(--color-neutral-300);
+  --color-surface-warm:     var(--color-neutral-100);
+  --color-surface-white:    #FFFFFF;
+  --color-surface-paper:    var(--color-neutral-50);
+
+  --color-premium-gold:     var(--color-pluss-500);
+  --color-premium-bg:       var(--color-pluss-50);
+  --color-premium-border:   var(--color-pluss-300);
+  --color-premium-badge:    var(--color-pluss-600);
+
+  --color-accent-yellow:    var(--color-secondary-400);
+
+  /* ─── ACCENT / CATEGORY COLORS ──────────────────── */
+  --color-accent-orange:    #E85D04;
+  --color-accent-navy:      #0A2463;
+  --color-accent-green:     #1A6E45;
+
+  /* ─── BREAKING / LIVE ───────────────────────────── */
+  --color-live-red:         #E30613;
+  --color-live-pulse:       rgba(227, 6, 19, 0.18);
+  --color-urgent-amber:     #D4600A;
+  --color-ticker-bg:        #0D0D0D;
+
+  /* ─── PREMIUM / PLUSS ──────────────────────────── */
+  --color-premium-gold:     #C9910A;
+  --color-premium-bg:       #FDF8EC;
+  --color-premium-border:   #E8C96A;
+  --color-premium-badge:    #B8860B;
+
+  /* ─── AD SLOTS ─────────────────────────────────── */
+  --color-ad-bg:            #F0F0EE;
+  --color-ad-border:        #D8D8D4;
+  --color-ad-label:         #888882;
+
+  /* ─── ENGAGEMENT ───────────────────────────────── */
+  --color-vote-up:          #1A6E45;
+  --color-vote-down:        #C0392B;
+  --color-bookmark-fill:    #C9910A;
+  --color-comment-bg:       #F7F7F5;
+  --color-comment-indent:   #E0E0E0;
+
+  /* ─── WEATHER ──────────────────────────────────── */
+  --color-weather-sun:      #F6C90E;
+  --color-weather-rain:     #4A90D9;
+  --color-weather-cloud:    #8E8E8E;
+
+  /* ─── DARK MODE [DRAFT/PROPOSED] ───────────────── */
+  --dm-surface-base:        #0F0F0F;
+  --dm-surface-raised:      #1A1A1A;
+  --dm-surface-overlay:     #242424;
+  --dm-surface-border:      #2E2E2E;
+  --dm-text-primary:        #F0F0F0;
+  --dm-text-secondary:      #A0A0A0;
+  --dm-text-muted:          #606060;
+  --dm-brand-red:           #E8283A;
+
+  /* ─── TYPOGRAPHY ───────────────────────────────── */
+  --font-serif:   'Lora', 'Georgia', serif;
+  --font-sans:    'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+
+  /* ─── TYPE SCALE ───────────────────────────────── */
+  --text-xs:      0.75rem;    /* 12px */
+  --text-sm:      0.875rem;   /* 14px */
+  --text-base:    1rem;       /* 16px */
+  --text-md:      1.125rem;   /* 18px */
+  --text-lg:      1.25rem;    /* 20px */
+  --text-xl:      1.5rem;     /* 24px */
+  --text-2xl:     1.875rem;   /* 30px */
+  --text-3xl:     2.25rem;    /* 36px */
+  --text-4xl:     3rem;       /* 48px */
+  --text-5xl:     3.75rem;    /* 60px */
+  --text-6xl:     4.5rem;     /* 72px */
+
+  /* ─── LINE HEIGHTS ─────────────────────────────── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.55;
+  --leading-loose:   1.75;
+
+  /* ─── FONT WEIGHTS ─────────────────────────────── */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-black:     900;
+
+  /* ─── SPACING SCALE ────────────────────────────── */
+  --space-xs:     4px;
+  --space-sm:     8px;
+  --space-md:     16px;
+  --space-lg:     24px;
+  --space-xl:     32px;
+  --space-2xl:    48px;
+  --space-3xl:    64px;
+  --space-4xl:    96px;
+  --space-5xl:    128px;
+
+  /* ─── READING COLUMN ───────────────────────────── */
+  --reading-col-width:   680px;
+  --reading-col-narrow:  600px;
+
+  /* ─── BORDER RADIUS ────────────────────────────── */
+  --radius-sm:    2px;
+  --radius-md:    4px;
+  --radius-lg:    8px;
+
+  /* ─── SHADOWS ──────────────────────────────────── */
+  --shadow-sm:    0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md:    0 4px 12px rgba(0, 0, 0, 0.10);
+  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.12);
+
+  /* ─── GRID / LAYOUT ────────────────────────────── */
+  --grid-cols:    12;
+  --gutter:       24px;
+  --col-max:      1280px;
+  --sidebar-w:    260px;
+  --topbar-h:     56px;
+
+  /* ─── TIMELINE ─────────────────────────────────── */
+  --timeline-line-color:  #E0E0E0;
+  --timeline-line-w:      2px;
+  --timeline-dot-size:    12px;
+  --timeline-dot-key:     18px;
+  --timeline-gutter:      48px;
+
+  /* ─── READING PREFS [DRAFT/PROPOSED] ───────────── */
+  --reader-font-sm:       16px;
+  --reader-font-md:       18px;
+  --reader-font-lg:       21px;
+  --reader-font-xl:       24px;
+  --toggle-track-w:       44px;
+  --toggle-track-h:       24px;
+  --toggle-thumb-size:    18px;
+}
